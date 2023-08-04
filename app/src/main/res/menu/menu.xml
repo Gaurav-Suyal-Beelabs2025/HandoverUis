@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/dashboard_Fragment"
+          android:title="Dashboard"
+          android:icon="@drawable/menu_dashboard"/>
+
+
+    <item android:id="@+id/earning_Fragment"
+          android:title="Earning"
+          android:icon="@drawable/menu_earning"/>
+
+
+    <item android:id="@+id/attendance_Fragment"
+          android:title="Attendance"
+          android:icon="@drawable/menu_attendance"/>
+
+     <item android:id="@+id/charging_Fragment"
+           android:title="Charging"
+           android:icon="@drawable/menu_charging"/>
+
+    <item android:id="@+id/profile_Fragment"
+          android:title="Profile"
+          android:icon="@drawable/menu_profile"/>
+
+</menu>

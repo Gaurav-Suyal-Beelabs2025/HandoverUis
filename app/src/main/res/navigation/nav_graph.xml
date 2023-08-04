@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboard_Fragment">
+
+    <fragment
+        android:id="@+id/attendance_Fragment"
+        android:name="com.example.handever.Attendance_Fragment"
+        android:label="fragment_attendance_"
+        tools:layout="@layout/fragment_attendance_" />
+    <fragment
+        android:id="@+id/charging_Fragment"
+        android:name="com.example.handever.Charging_Fragment"
+        android:label="fragment_charging_"
+        tools:layout="@layout/fragment_charging_" />
+    <fragment
+        android:id="@+id/dashboard_Fragment"
+        android:name="com.example.handever.Dashboard_Fragment"
+        android:label="fragment_dashboard_"
+        tools:layout="@layout/fragment_dashboard_" />
+    <fragment
+        android:id="@+id/earning_Fragment"
+        android:name="com.example.handever.Earning_Fragment"
+        android:label="fragment_earning_"
+        tools:layout="@layout/fragment_earning_" />
+    <fragment
+        android:id="@+id/profile_Fragment"
+        android:name="com.example.handever.Profile_Fragment"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" />
+</navigation>
