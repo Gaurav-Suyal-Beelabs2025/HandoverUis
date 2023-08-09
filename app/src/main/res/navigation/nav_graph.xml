@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.newretailer.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_location_Fragment"
+            app:destination="@id/location_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_alert_dialiogbox_Fragment"
+            app:destination="@id/alert_dialiogbox_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_multiple_Order_Fragment"
+            app:destination="@id/multiple_Order_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_order_listFragment"
+            app:destination="@id/order_listFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pickup_Location_Fragment"
+            app:destination="@id/pickup_Location_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/location_Fragment"
+        android:name="com.example.newretailer.Fragment.Location_Fragment"
+        android:label="fragment_location_"
+        tools:layout="@layout/fragment_location_" />
+    <fragment
+        android:id="@+id/alert_dialiogbox_Fragment"
+        android:name="com.example.newretailer.Fragment.Alert_dialiogbox_Fragment"
+        android:label="fragment_alert_dialiogbox_"
+        tools:layout="@layout/fragment_alert_dialiogbox_" />
+    <fragment
+        android:id="@+id/multiple_Order_Fragment"
+        android:name="com.example.newretailer.Fragment.Multiple_Order_Fragment"
+        android:label="fragment_multiple__order_"
+        tools:layout="@layout/fragment_multiple__order_" />
+    <fragment
+        android:id="@+id/order_listFragment"
+        android:name="com.example.newretailer.Fragment.Order_listFragment"
+        android:label="fragment_order_list"
+        tools:layout="@layout/fragment_order_list" />
+    <fragment
+        android:id="@+id/pickup_Location_Fragment"
+        android:name="com.example.newretailer.Fragment.Pickup_Location_Fragment"
+        android:label="fragment_pickup__location_"
+        tools:layout="@layout/fragment_pickup__location_" />
+</navigation>

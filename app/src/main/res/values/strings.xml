@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">NewRetailer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_screen">Location Screen</string>
+    <string name="menu_add">Menu Add</string>
+
+    <string name="Rajeev_Ranjan">Rajeev Ranjan</string>
+    <string name="work">Work</string>
+    <string name="B_154_Noida_Sector_63.....">B-154 Noida, Sector 63.....</string>
+    <string name="Search_in_your_neighbourhood">Search in your neighbourhood</string>
+    <string name="Call_and_Order">Call and Order</string>
+    <string name="Online_Ordering">Online Ordering</string>
+    <string name="Categories">Categories</string>
+    <string name="see_more">See More</string>
+    <string name="food">Food</string>
+    <string name="stationary">Stationary</string>
+    <string name="pooja">Pooja</string>
+    <string name="medicine">Medicine</string>
+    <string name="grocery">Grocery</string>
+    <string name="offers">Offers</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="make_your_nfirst_aid_box">Make Your \nFirst-aid Box</string>
+    <string name="new_arrival_non_home_decor">New Arrival \non Home Decor</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="sharma_ji_sweets">Sharma ji Sweets</string>
+    <string name="b_154_noida_63_noida_201301">B-154, Noida 63, Noida 201301</string>
+    <string name="my_profile">My Profile</string>
+    <string name="abhishek_gmail_com">abhishek@gmail.com</string>
+    <string name="mob_number">+91 7684656809</string>
+    <string name="favourites">Favourites</string>
+    <string name="wallet">Wallet</string>
+    <string name="history">History</string>
+    <string name="language">Language</string>
+    <string name="select_a_language">Select a language</string>
+    <string name="change_notification_preferences">Change notification preferences</string>
+    <string name="notifications">Notifications</string>
+    <string name="share_edit_amp_add_new_addresses"><![CDATA[Share, Edit & Add New Addresses]]></string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="payments">Payments</string>
+    <string name="payment_modes">Payment Modes</string>
+    <string name="refunds">Refunds</string>
+    <string name="refund_status">Refund Status</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="faqs_amp_links"><![CDATA[FAQs & Links]]></string>
+    <string name="search_categories">Search Categories</string>
+    <string name="all">All</string>
+    <string name="unread">Unread</string>
+    <string name="read">Read</string>
+    <string name="grocery_offer">Grocery Offer</string>
+    <string name="get_50_on_orders_above_rs599_offer_is_valid_till_31st_january">Get 50% on orders above Rs599. Offer is valid till 31st January.</string>
+    <string name="temporary_home">Temporary Home</string>
+    <string name="_12_kms">12 kms</string>
+    <string name="j_121_second_floor_block_j_rajouri_garden_new_delhi">J-121, Second Floor, Block J, Rajouri Garden,New Delhi</string>
+    <string name="confirm">Confirm</string>
+    <string name="recent_locations">Recent Locations</string>
+    <string name="b_block_sector_63_noida">B Block, Sector 63, Noida</string>
+    <string name="_14_mins">14 mins</string>
+    <string name="new_order_arrived">New Order Arrived!</string>
+    <string name="Earning">Earning : <font color="#929292">₹42.16</font></string>
+    <string name="Distance">Distance : <font color="#929292">3.82km</font></string>
+    <string name="pickup">Pickup</string>
+    <string name="chowringhee">Chowringhee</string>
+    <string name="sd_138b_ahinsa_khand_1_jaipuria_service_road_indirapuram_ghaziabad">SD-138B, Ahinsa Khand 1, Jaipuria Service Road, Indirapuram, Ghaziabad</string>
+    <string name="accept">Accept</string>
+    <string name="skip">Skip</string>
+    <string name="category">Category</string>
+    <string name="total_weight">Total Weight</string>
+    <string name="weight">14.5 Kg</string>
+    <string name="_2_wheeler">2 Wheeler</string>
+    <string name="_3_wheeler">3 Wheeler</string>
+    <string name="_750">750 ₹</string>
+    <string name="max_volume_40_40_40cm">Max. Volume 40*40*40cm</string>
+    <string name="_3_wheeler_xl">3 Wheeler XL</string>
+    <string name="alert_dialogbox">Alert dialogbox</string>
+    <string name="multiple_order">Multiple Order</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="new_add">New Add</string>
+    <string name="order_list">Order List</string>
+    <string name="Items_Category">Items Category<font color="#EF5B25">*</font></string>
+    <string name="_4_wheeler">4 wheeler</string>
+    <string name="_3_wheeler_nmax_weight_15_kg_max_volume_40_40_40cm"><b>3 Wheeler</b><font color="#878787">\nMax. Weight 15 Kg \nMax. Volume 40*40*40cm</font></string>
+    <string name="_4_wheeler_nmax_weight_15_kg_max_volume_40_40_40cm"><b>4 Wheeler</b><font color="#878787">\nMax. Weight 15 Kg \nMax. Volume 40*40*40cm</font></string>
+    <string name="our_rider_is_on_the_way_and_reaching_your_shop_to_pick_up_the_order">Our rider is on the way and reaching your shop to pick up the order.</string>
+    <string name="orders_will_be_serve_d_as_the_timeline">Orders will be serve d as the timeline</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="seat_capacity">Seat Capacity</string>
+    <string name="applicable_for_food_grocery_and_small_package_deliveries">Applicable for Food, Grocery and small Package Deliveries.</string>
+    <string name="check_health">Check Health</string>
+    <string name="minimum_fare">Minimum Fare</string>
+    <string name="payout_for_00_00am_23_59_pm">Payout for 00:00AM- 23:59 PM</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="help">help</string>
+    <string name="zone">Zone</string>
+    <string name="rajeev_chauk_blue_ford_market_new_delhi">Rajeev Chauk blue ford market New Delhi</string>
+    <string name="monday_sunday">Monday- Sunday</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="_16">₹16</string>
+    <string name="earning_per_km">Earning per Km</string>
+    <string name="price_per_minute">Price per minute</string>
+    <string name="_0_8">₹0.8</string>
+    <string name="platform_charges">Platform Charges</string>
+    <string name="_18">18%</string>
+    <string name="pickup_extra_km_fare_post_2_km_max_12">Pickup Extra Km Fare post 2 km (Max ₹ 12)</string>
+    <string name="_4_km">₹4/km</string>
+
+</resources>

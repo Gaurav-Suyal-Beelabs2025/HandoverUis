@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/add_address_drw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/call_rider_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/circle_2_drw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/circle_drw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/delete_icon.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/down_sign.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/drop_drw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/left_sign.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/location_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/locationlogo.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/map.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/map_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/notfication.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/noti.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/right_singh.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/second_call_rider_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/second_location_drwable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/select_catogry_drw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/submit_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/third_location_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/timline_drwble.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/top_sign.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable-v24/view_dashgaph.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/__wheeler.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/__wheeler_xl.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/add_icon.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/addmore_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/arrow_down_black.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/back_btn.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/basefare.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/buttondegins.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/change.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/check_health.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/clock_3.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/delete_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/dotted_horizontal_line.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/down_btn.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/drawable_cricler.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/drawable_food.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/edit_white.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/edittxt_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/group_33696.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/group_33751.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/home_menu.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/ic_left_arraow.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/ic_support.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/img_scooter.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/img_search_view.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/img_voice_search.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/live_order_menu.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/location_icon.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/locationblack_icon.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/main_draw.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/next_btn.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/orange_button_background.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/payout.xml" value="0.2325" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/recent_itamlist.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/recent_location.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/scooter_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/search_view_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/see_more_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/send_menu.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/shopping_cart_menu.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/thumbs.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/track.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/drawable/wheeler_background.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/font/inter.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/font/inter_regular.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/font/inter_semibold.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/activity_main.xml" value="0.3382761816496756" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/add_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/exact_address.xml" value="0.1" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/exset_address.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_add_itamand_details_.xml" value="0.2359375" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_additamand.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_alert_dialiogbox_.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_home.xml" value="0.2359375" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_location_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_multiple__order_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_odrder_list_ragment.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_order_list.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_pickup__location_.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/fragment_rate_cart.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/menu_add.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/new_add.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/recent_itamlist.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/layout/saved_itamlist.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/NewRetailer2/app/src/main/res/menu/nav_button.xml" value="0.20512820512820512" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

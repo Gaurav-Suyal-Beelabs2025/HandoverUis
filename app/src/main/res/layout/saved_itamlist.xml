@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/img_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:backgroundTint="#F2F2F2"
+                android:background="@drawable/scooter_drawable"
+                app:layout_constraintEnd_toEndOf="@id/txt_km"
+                app:layout_constraintStart_toStartOf="@id/txt_km"
+                app:layout_constraintTop_toTopOf="@id/txt_temporary_home"
+                android:src="@drawable/location_black" />
+
+
+            <TextView
+                android:id="@+id/txt_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:text="@string/_12_kms"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_location" />
+
+
+            <TextView
+                android:id="@+id/txt_temporary_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temporary_home"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                app:layout_constraintStart_toEndOf="@id/txt_km"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/j_121_second_floor_block_j_rajouri_garden_new_delhi"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textColor="#8B8B8B"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
+                app:layout_constraintTop_toBottomOf="@id/txt_temporary_home" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/img_delete" />
+
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_edit"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/delete_drawable"
+                app:layout_constraintStart_toStartOf="@id/txt_Address"
+                app:layout_constraintTop_toBottomOf="@id/txt_Address" />
+
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_delete"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/delete_drawable"
+                app:layout_constraintStart_toEndOf="@id/img_edit"
+                app:layout_constraintTop_toTopOf="@id/img_edit" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
