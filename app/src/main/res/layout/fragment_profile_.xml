@@ -1,14 +1,829 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".Profile_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/ic_left_arraow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Add Items &amp; Details "
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_store_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:paddingVertical="@dimen/_7sdp"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <TextView
+          android:id="@+id/txt_number1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1"
+          android:textColor="@color/white"
+          android:textSize="12sp"
+          android:textAllCaps="false"
+          android:paddingVertical="@dimen/_3sdp"
+          android:paddingHorizontal="@dimen/_7sdp"
+          android:textAlignment="center"
+          android:layout_marginStart="@dimen/_19sdp"
+          android:background="@drawable/store_details"
+          android:fontFamily="@font/inter_bold"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/store_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/store_details"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_number1"
+            app:layout_constraintStart_toEndOf="@id/txt_number1"
+            app:layout_constraintTop_toTopOf="@id/txt_number1" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:src="@drawable/ic_arrowfarword_black"
+            app:layout_constraintBottom_toBottomOf="@id/store_details"
+            app:layout_constraintStart_toEndOf="@id/store_details"
+            app:layout_constraintTop_toTopOf="@id/store_details" />
+
+        <TextView
+            android:id="@+id/txt_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginEnd="@dimen/_160sdp"
+            android:background="@drawable/store_details"
+            android:backgroundTint="#EBEBEB"
+            android:fontFamily="@font/inter_bold"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#BDBDBD"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_number1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/txt_number1" />
+
+
+        <TextView
+            android:id="@+id/txt_menu_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/menu_details"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/store_details"
+            app:layout_constraintStart_toEndOf="@id/txt_number2"
+            app:layout_constraintTop_toTopOf="@+id/store_details" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_Add_same"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layout_store_details"
+        android:background="@drawable/category_drawable"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Add same details as previous"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/inter_medium"/>
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/txt_business_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Business Name"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_19sdp"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@+id/layout_Add_same" />
+
+
+    <EditText
+        android:id="@+id/edit_the_sweet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. The Sweet House Shoppie"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_business_name" />
+
+
+    <TextView
+        android:id="@+id/txt_Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Category"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/txt_business_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_the_sweet" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Category"
+        android:background="@drawable/category_drawable"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/txt_select_a_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/select_a_category"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/inter_medium"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_black"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/txt_food_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Food Type"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/layout_select_category"
+        app:layout_constraintTop_toBottomOf="@+id/layout_select_category" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_veg_nonveg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_select_category"
+        app:layout_constraintStart_toStartOf="@+id/layout_select_category"
+        app:layout_constraintTop_toBottomOf="@id/txt_food_type">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vej_nonvej_drawable"
+            android:text="   Veg   "
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textColor="#595959"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vej_nonvej_drawable"
+            android:text="Non-Veg"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textColor="#595959"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Mobile Number"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Category"
+        app:layout_constraintTop_toBottomOf="@id/layout_veg_nonveg" />
+
+
+
+    <EditText
+        android:id="@+id/edit_mobilenumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:hint="+91 00000 00000"
+        android:textColorHint="#808080"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_mobile_number" />
+
+    <TextView
+        android:id="@+id/txt_whatapp_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="WhatApp Number"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Category"
+        app:layout_constraintTop_toBottomOf="@id/edit_mobilenumber" />
+
+
+    <EditText
+        android:id="@+id/edit_whatapp_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="+91 00000 00000"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_whatapp_number" />
+
+    <CheckBox
+        android:id="@+id/checkbox_whatappnuber"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:text="Mark same as mobile no."
+        android:layout_marginTop="@dimen/_7sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_whatapp_number"
+        app:layout_constraintTop_toBottomOf="@+id/edit_whatapp_number" />
+
+
+    <TextView
+        android:id="@+id/txt_whatapp_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="WhatApp Number"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Category"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_whatappnuber" />
+
+
+    <EditText
+        android:id="@+id/edit_whatapp_number2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="+91 00000 00000"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_whatapp_number2" />
+
+
+    <TextView
+        android:id="@+id/txt_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Address"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Category"
+        app:layout_constraintTop_toBottomOf="@id/edit_whatapp_number2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_Address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_whatapp_number2"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@id/txt_Address">
+
+
+        <TextView
+            android:id="@+id/txt_Lorem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+           <LinearLayout
+               android:id="@+id/layout_searchon_map"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="@dimen/_8sdp"
+               android:gravity="center"
+               android:paddingVertical="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_11sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:background="@drawable/vej_nonvej_drawable"
+               android:layout_marginHorizontal="@dimen/_9sdp"
+               app:layout_constraintTop_toBottomOf="@+id/txt_Lorem">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_location_black"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Search on Map"
+                   android:textSize="12sp"
+                   android:layout_marginStart="@dimen/_4sdp"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:fontFamily="@font/inter_bold"/>
+
+           </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/txt_Landmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Landmark"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/layout_Address" />
+
+    <EditText
+        android:id="@+id/edit_Chaurangilane"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. Chaurangilane North Ghonda (Optional)"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_Landmark" />
+
+
+
+    <TextView
+        android:id="@+id/txt_Pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Pincode"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Chaurangilane" />
+
+    <EditText
+        android:id="@+id/edit_pincode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. New Delhi"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_Pincode" />
+
+
+
+    <TextView
+        android:id="@+id/txt_State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="State"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pincode" />
+
+    <EditText
+        android:id="@+id/edit_State"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. New Delhi"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_State" />
+
+
+
+    <TextView
+        android:id="@+id/txt_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="City"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_State" />
+
+    <EditText
+        android:id="@+id/edit_City"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. New Delhi"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_City" />
+
+
+    <TextView
+        android:id="@+id/txt_order_serving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Order Serving Mode"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_City" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_order_serving"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_select_category"
+        app:layout_constraintStart_toStartOf="@+id/layout_select_category"
+        app:layout_constraintTop_toBottomOf="@id/txt_order_serving">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vej_nonvej_drawable"
+            android:text="Home Delivery"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textColor="#595959"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vej_nonvej_drawable"
+            android:text="Take Away"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textColor="#595959"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vej_nonvej_drawable"
+            android:text="Dineout"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textColor="#595959"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_about_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="About Shop"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/layout_order_serving" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_describe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_City"
+        app:layout_constraintStart_toStartOf="@+id/edit_City"
+        app:layout_constraintTop_toBottomOf="@id/txt_about_shop">
+
+
+        <TextView
+            android:id="@+id/txt_Describe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Describe your shop in 100 words"
+            android:textAllCaps="false"
+            android:textColor="#808080"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="#808080"
+              android:textAllCaps="false"
+              android:text="11/100"
+              android:layout_marginBottom="@dimen/_8sdp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:layout_marginTop="@dimen/_19sdp"
+              android:layout_marginEnd="@dimen/_9sdp"
+              app:layout_constraintTop_toBottomOf="@id/txt_Describe"
+              app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_Speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Speciality"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
+        app:layout_constraintTop_toBottomOf="@+id/layout_describe" />
+
+
+    <EditText
+        android:id="@+id/edit_kesar_salad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_drawable"
+        android:backgroundTint="#F6F6F6"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Ex. Kesar salad"
+        android:textColorHint="#808080"
+        android:textAllCaps="false"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+        app:layout_constraintTop_toBottomOf="@id/txt_Speciality" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

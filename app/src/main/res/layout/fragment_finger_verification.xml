@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A063F"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FingerVerificationFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/ic_left_arraow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Verification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/space_grotesk_bold"
+            android:text="Verification"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintEnd_toStartOf="@+id/support"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+        <ImageView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_support"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@id/Verification"
+            app:layout_constraintEnd_toStartOf="@+id/help_txt"
+            app:layout_constraintTop_toTopOf="@id/Verification"
+            app:tint="#94FF8B"/>
+
+        <TextView
+            android:id="@+id/help_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/space_grotesk_bold"
+            android:text="help"
+            android:textColor="#94FF8B"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/support"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/support" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/space_grotesk_semibold"
+            android:text="21 May, 2023"
+            android:textAllCaps="false"
+            android:textColor="#9684B6"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/Verification"
+            app:layout_constraintStart_toStartOf="@+id/Verification"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/img_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fingerprint"
+        android:layout_marginTop="@dimen/_140sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" />
+
+
+    <TextView
+        android:id="@+id/txt_Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/space_grotesk"
+        android:text="Verify to Clock In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_marginTop="@dimen/_95sdp"
+        app:layout_constraintEnd_toEndOf="@+id/img_fingerprint"
+        app:layout_constraintStart_toStartOf="@+id/img_fingerprint"
+        app:layout_constraintTop_toBottomOf="@+id/img_fingerprint" />
+
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Make sure your hands are clean while scanning fingerprint."
+          android:textAllCaps="false"
+          android:textSize="14sp"
+          android:gravity="center"
+          android:textColor="#9B87BF"
+          android:layout_marginStart="@dimen/_5sdp"
+          android:layout_marginEnd="@dimen/_5sdp"
+          android:fontFamily="@font/space_grotesk"
+          app:layout_constraintTop_toBottomOf="@+id/txt_Verify"
+          app:layout_constraintStart_toStartOf="@+id/txt_Verify"
+          app:layout_constraintEnd_toEndOf="@+id/txt_Verify"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
