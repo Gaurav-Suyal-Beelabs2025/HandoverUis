@@ -113,13 +113,12 @@
             android:id="@+id/txt_number2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_17sdp"
-            android:layout_marginEnd="@dimen/_160sdp"
+            android:layout_marginEnd="@dimen/_150sdp"
             android:background="@drawable/store_details"
             android:backgroundTint="#EBEBEB"
             android:fontFamily="@font/inter_bold"
-            android:paddingVertical="@dimen/_3sdp"
             android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_3sdp"
             android:text="2"
             android:textAlignment="center"
             android:textAllCaps="false"
@@ -127,7 +126,6 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/txt_number1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/txt_number1" />
 
 
