@@ -104,5 +104,8 @@
     <string name="_18">18%</string>
     <string name="pickup_extra_km_fare_post_2_km_max_12">Pickup Extra Km Fare post 2 km (Max ₹ 12)</string>
     <string name="_4_km">₹4/km</string>
+    <string name="Items_Categorys">Carriage Type<font color="#000000"><b>       Open</b></font></string>
+    <string name="loading_capacity">Loading Capacity<font color="#000000"><b>   400 KG</b></font></string>
+    <string name="delevery_charge"><font color="#FFFFFF">Delivery Charger: </font><font color="#FFFFFF"><b> \n₹580    </b></font> <font color="#000000"><b>    Details</b></font></string>
 
 </resources>

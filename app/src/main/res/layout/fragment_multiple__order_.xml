@@ -13,1153 +13,1176 @@
         tools:context=".Fragment.Multiple_Order_Fragment">
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:paddingVertical="@dimen/_12sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/toolbar_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            android:paddingVertical="@dimen/_12sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
 
-            <ImageView
-                android:id="@+id/back_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:background="@drawable/ic_left_arraow"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+<!--            <ImageView-->
+<!--                android:id="@+id/back_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:background="@drawable/ic_left_arraow"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <TextView
-                android:id="@+id/profile"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:fontFamily="@font/inter_bold"
-                android:text="Vehicle Details"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@id/back_btn"
-                app:layout_constraintEnd_toStartOf="@+id/support"
-                app:layout_constraintStart_toEndOf="@+id/back_btn"
-                app:layout_constraintTop_toBottomOf="@id/back_btn"
-                app:layout_constraintTop_toTopOf="@id/back_btn" />
+<!--            <TextView-->
+<!--                android:id="@+id/profile"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                android:fontFamily="@font/inter_bold"-->
+<!--                android:text="Vehicle Details"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="24sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/back_btn"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/support"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/back_btn"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/back_btn"-->
+<!--                app:layout_constraintTop_toTopOf="@id/back_btn" />-->
 
-            <ImageView
-                android:id="@+id/support"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_support"
-                android:layout_marginEnd="@dimen/_5sdp"
-                app:layout_constraintBottom_toBottomOf="@id/profile"
-                app:layout_constraintEnd_toStartOf="@+id/help_txt"
-                app:layout_constraintTop_toTopOf="@id/profile" />
+<!--            <ImageView-->
+<!--                android:id="@+id/support"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/ic_support"-->
+<!--                android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/profile"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/help_txt"-->
+<!--                app:layout_constraintTop_toTopOf="@id/profile" />-->
 
-            <TextView
-                android:id="@+id/help_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:fontFamily="@font/inter_bold"
-                android:text="help"
-                android:textColor="#0F6FB5"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="@id/support"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/support" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/help_txt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:fontFamily="@font/inter_bold"-->
+<!--                android:text="help"-->
+<!--                android:textColor="#0F6FB5"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/support"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@id/support" />-->
 
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_bike"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/pngegg__1__1"-->
+<!--                    android:layout_marginTop="@dimen/_20sdp"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_two_wheeler"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_30sdp"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Hero Splender+"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#FA713F"-->
+<!--                    android:textSize="20sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/img_bike"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/img_bike" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_name"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Rajeev’s Bike"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_two_wheeler"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_two_wheeler"-->
+<!--                    tools:layout_editor_absoluteY="340dp" />-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/change"-->
+<!--                    android:text="Change"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#0F6FB5"-->
+<!--                    android:paddingHorizontal="@dimen/_20sdp"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:paddingVertical="@dimen/_4sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/txt_name"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/txt_two_wheeler" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="#EDEDED"-->
+<!--                    android:elevation="@dimen/_20sdp"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/txt_name" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Manufacture"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Manufacture"-->
+<!--                    android:textSize="16sp"-->
+
+<!--                    android:textAllCaps="false"-->
+<!--                    android:layout_marginTop="@dimen/_18sdp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/view"-->
+<!--                    android:fontFamily="@font/inter_bold" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Hero"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Hero"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_Manufacture" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_fuel_type"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="@string/fuel_type"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginEnd="@dimen/_63sdp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/txt_Manufacture" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Petrol"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Petrol"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_fuel_type"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_fuel_type" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Model"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Model"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginTop="@dimen/_12sdp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_Hero" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Splender"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Splender"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Model"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_Model" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Year"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Year"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Petrol"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/txt_Model" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_year"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="2017"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Year"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_Year" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_vehicle_type"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="@string/vehicle_type"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginTop="@dimen/_12sdp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_Splender"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_Splender" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_Hero01"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="Hero"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_vehicle_type" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_seat_capacity"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="@string/seat_capacity"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_year"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/txt_vehicle_type" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_number"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="1"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#686868"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_seat_capacity"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_seat_capacity" />-->
+
+
+<!--                <View-->
+<!--                    android:id="@+id/view2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_18sdp"-->
+<!--                    android:background="#F1F1F1"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/txt_number" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_error"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_18sdp"-->
+<!--                    android:src="@drawable/group_33696"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/txt_vehicle_type"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/view2" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_applicable"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:text="@string/applicable_for_food_grocery_and_small_package_deliveries"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#0F6FB5"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginStart="@dimen/_8sdp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/img_error"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/img_error" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_check_health"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/check_health"-->
+<!--                    android:text="@string/check_health"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:fontFamily="@font/inter_bold"-->
+<!--                    android:paddingVertical="@dimen/_7sdp"-->
+<!--                    android:paddingHorizontal="@dimen/_40sdp"-->
+<!--                    android:layout_marginTop="@dimen/_70sdp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_applicable" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="@dimen/_15sdp"-->
+<!--                    android:background="@drawable/buttondegins"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_marginTop="@dimen/_17sdp"-->
+<!--                    android:paddingVertical="@dimen/_10sdp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    android:layout_marginBottom="@dimen/_60sdp"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/txt_check_health"-->
+<!--                    tools:layout_editor_absoluteX="19dp">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/inter_semibold"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Change Vehicle"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="20sp" />-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/edit_white"-->
+<!--                        android:layout_marginStart="@dimen/_5sdp" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
 
-
-                <ImageView
-                    android:id="@+id/img_bike"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pngegg__1__1"
-                    android:layout_marginTop="@dimen/_20sdp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-
-                <TextView
-                    android:id="@+id/txt_two_wheeler"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_30sdp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Hero Splender+"
-                    android:textAllCaps="false"
-                    android:textColor="#FA713F"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toStartOf="@id/img_bike"
-                    app:layout_constraintTop_toBottomOf="@id/img_bike" />
-
-
-                <TextView
-                    android:id="@+id/txt_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Rajeev’s Bike"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_two_wheeler"
-                    app:layout_constraintStart_toStartOf="@+id/txt_two_wheeler"
-                    tools:layout_editor_absoluteY="340dp" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/change"
-                    android:text="Change"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textAllCaps="false"
-                    android:textColor="#0F6FB5"
-                    android:paddingHorizontal="@dimen/_20sdp"
-                    android:textSize="12sp"
-                    android:paddingVertical="@dimen/_4sdp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_name"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/txt_two_wheeler" />
-
-                <View
-                    android:id="@+id/view"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EDEDED"
-                    android:elevation="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@id/txt_name" />
-
-                <TextView
-                    android:id="@+id/txt_Manufacture"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Manufacture"
-                    android:textSize="16sp"
-
-                    android:textAllCaps="false"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:textColor="@color/black"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@id/view"
-                    android:fontFamily="@font/inter_bold" />
-
-
-                <TextView
-                    android:id="@+id/txt_Hero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hero"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/inter_bold"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Manufacture" />
-
-                <TextView
-                    android:id="@+id/txt_fuel_type"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="@string/fuel_type"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginEnd="@dimen/_63sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/txt_Manufacture" />
-
-                <TextView
-                    android:id="@+id/txt_Petrol"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Petrol"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_fuel_type"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_fuel_type" />
-
-
-                <TextView
-                    android:id="@+id/txt_Model"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Model"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Hero" />
-
-                <TextView
-                    android:id="@+id/txt_Splender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Splender"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Model"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Model" />
-
-
-                <TextView
-                    android:id="@+id/txt_Year"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Year"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Petrol"
-                    app:layout_constraintTop_toTopOf="@+id/txt_Model" />
-
-
-                <TextView
-                    android:id="@+id/txt_year"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="2017"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Year"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Year" />
-
-
-                <TextView
-                    android:id="@+id/txt_vehicle_type"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="@string/vehicle_type"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_Splender"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Splender" />
-
-
-                <TextView
-                    android:id="@+id/txt_Hero01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="Hero"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_vehicle_type" />
-
-
-                <TextView
-                    android:id="@+id/txt_seat_capacity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="@string/seat_capacity"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_year"
-                    app:layout_constraintTop_toTopOf="@+id/txt_vehicle_type" />
-
-
-                <TextView
-                    android:id="@+id/txt_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="1"
-                    android:textAllCaps="false"
-                    android:textColor="#686868"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_seat_capacity"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_seat_capacity" />
-
-
-                <View
-                    android:id="@+id/view2"
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"
-                    app:layout_constraintTop_toBottomOf="@id/txt_number" />
-
-                <ImageView
-                    android:id="@+id/img_error"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:src="@drawable/group_33696"
-                    app:layout_constraintStart_toStartOf="@id/txt_vehicle_type"
-                    app:layout_constraintTop_toBottomOf="@id/view2" />
-
-
-                <TextView
-                    android:id="@+id/txt_applicable"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="@string/applicable_for_food_grocery_and_small_package_deliveries"
-                    android:textAllCaps="false"
-                    android:textColor="#0F6FB5"
-                    android:textSize="16sp"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginEnd="@dimen/_10sdp"
-                    app:layout_constraintStart_toEndOf="@+id/img_error"
-                    app:layout_constraintTop_toTopOf="@+id/img_error" />
-
-
-                <TextView
-                    android:id="@+id/txt_check_health"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/check_health"
-                    android:text="@string/check_health"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/inter_bold"
-                    android:paddingVertical="@dimen/_7sdp"
-                    android:paddingHorizontal="@dimen/_40sdp"
-                    android:layout_marginTop="@dimen/_70sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_applicable" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="@dimen/_15sdp"
-                    android:background="@drawable/buttondegins"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_17sdp"
-                    android:paddingVertical="@dimen/_10sdp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="@dimen/_60sdp"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_check_health"
-                    tools:layout_editor_absoluteX="19dp">
-
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back_menu8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_19sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/back_btn" />
 
                     <TextView
+                        android:id="@+id/txt_multipleorder_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
                         android:fontFamily="@font/inter_semibold"
-                        android:gravity="center"
-                        android:text="Change Vehicle"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:text="Multiple Orders"
+                        app:layout_constraintBottom_toBottomOf="@+id/back_menu8"
+                        app:layout_constraintStart_toEndOf="@+id/back_menu8"
+                        app:layout_constraintTop_toTopOf="@+id/back_menu8" />
 
 
-                    <ImageView
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cont1_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:background="#F1F1F1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_multipleorder_menu8">
+
+
+                        <TextView
+                            android:id="@+id/circular_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:background="@drawable/drawable_cricler"
+                            android:paddingHorizontal="@dimen/_7sdp"
+                            android:paddingVertical="@dimen/_3sdp"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/delivery_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Details"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/inter_regular"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/circular_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/circular_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/circular_menu8" />
+
+                        <ImageView
+                            android:id="@+id/next_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_11sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/delivery_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/delivery_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/delivery_menu8"
+                            app:srcCompat="@drawable/next_btn" />
+
+                        <TextView
+                            android:id="@+id/circular2_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/drawable_cricler"
+                            android:paddingHorizontal="@dimen/_7sdp"
+                            android:paddingVertical="@dimen/_3sdp"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:text="2"
+                            android:backgroundTint="#B2BABB"
+                            android:textColor="#F8F9F9"
+                            app:layout_constraintBottom_toBottomOf="@+id/next_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/next_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/next_menu8" />
+
+                        <TextView
+                            android:id="@+id/txt_confirmation_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:textSize="12sp"
+                            android:text="Confirmation"
+                            android:textColor="#808080"
+                            android:fontFamily="@font/inter"
+                            app:layout_constraintBottom_toBottomOf="@+id/circular2_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/circular2_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/circular2_menu8" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con2_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_9sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@drawable/edittxt_drawable"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cont1_menu8">
+
+
+                        <TextView
+                            android:id="@+id/pickup_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="Pick Up Location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/location_menu8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toStartOf="@+id/map_menu8"
+                            app:layout_constraintStart_toStartOf="@+id/pickup_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/pickup_menu8" />
+
+                        <TextView
+                            android:id="@+id/map_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Map"
+                            android:textSize="10sp"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:paddingHorizontal="@dimen/_7sdp"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#FA713F"
+                            android:background="@drawable/edittxt_drawable"
+                            android:drawableStart="@drawable/location_icon"
+                            app:layout_constraintBottom_toBottomOf="@+id/pickup_menu8"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/pickup_menu8" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/view_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:background="#EDEDED"
+                        app:layout_constraintTop_toBottomOf="@+id/con2_menu8"
+                        tools:layout_editor_absoluteX="22dp" />
+
+                    <TextView
+                        android:id="@+id/categort_menu8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/edit_white"
-                        android:layout_marginStart="@dimen/_5sdp" />
-
-
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.core.widget.NestedScrollView>
-
-
-        <!--    <androidx.core.widget.NestedScrollView-->
-        <!--        android:layout_width="match_parent"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        app:layout_constraintTop_toTopOf="parent">-->
-
-        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent">-->
-        <!--            <ImageView-->
-        <!--                android:id="@+id/back_menu8"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginTop="@dimen/_19sdp"-->
-        <!--                android:layout_marginStart="@dimen/_15sdp"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toTopOf="parent"-->
-        <!--                app:srcCompat="@drawable/back_btn" />-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/txt_multipleorder_menu8"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                android:textColor="@color/black"-->
-        <!--                android:textSize="20sp"-->
-        <!--                android:fontFamily="@font/inter_semibold"-->
-        <!--                android:text="Multiple Orders"-->
-        <!--                app:layout_constraintBottom_toBottomOf="@+id/back_menu8"-->
-        <!--                app:layout_constraintStart_toEndOf="@+id/back_menu8"-->
-        <!--                app:layout_constraintTop_toTopOf="@+id/back_menu8" />-->
-
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--                android:id="@+id/cont1_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingVertical="@dimen/_7sdp"-->
-        <!--                android:background="#F1F1F1"-->
-        <!--                android:layout_marginTop="@dimen/_10sdp"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/txt_multipleorder_menu8">-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/circular_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_17sdp"-->
-        <!--                    android:background="@drawable/drawable_cricler"-->
-        <!--                    android:paddingHorizontal="@dimen/_7sdp"-->
-        <!--                    android:paddingVertical="@dimen/_3sdp"-->
-        <!--                    android:text="1"-->
-        <!--                    android:textColor="@color/white"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/delivery_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:text="Delivery Details"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:fontFamily="@font/inter_regular"-->
-        <!--                    android:layout_marginStart="@dimen/_5sdp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/circular_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/circular_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/circular_menu8" />-->
-
-        <!--                <ImageView-->
-        <!--                    android:id="@+id/next_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_11sdp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/delivery_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/delivery_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/delivery_menu8"-->
-        <!--                    app:srcCompat="@drawable/next_btn" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/circular2_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:background="@drawable/drawable_cricler"-->
-        <!--                    android:paddingHorizontal="@dimen/_7sdp"-->
-        <!--                    android:paddingVertical="@dimen/_3sdp"-->
-        <!--                    android:layout_marginStart="@dimen/_14sdp"-->
-        <!--                    android:text="2"-->
-        <!--                    android:backgroundTint="#B2BABB"-->
-        <!--                    android:textColor="#F8F9F9"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/next_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/next_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/next_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/txt_confirmation_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_6sdp"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:text="Confirmation"-->
-        <!--                    android:textColor="#808080"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/circular2_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/circular2_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/circular2_menu8" />-->
-
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--                android:id="@+id/con2_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingBottom="@dimen/_9sdp"-->
-        <!--                android:layout_marginTop="@dimen/_16sdp"-->
-        <!--                android:background="@drawable/edittxt_drawable"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/cont1_menu8">-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/pickup_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_7sdp"-->
-        <!--                    android:fontFamily="@font/inter_semibold"-->
-        <!--                    android:text="Pick Up Location"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/location_menu8"-->
-        <!--                    android:layout_width="0dp"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_6sdp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/pickup_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/pickup_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/map_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:text=" Map"-->
-        <!--                    android:textSize="10sp"-->
-        <!--                    android:layout_marginEnd="@dimen/_7sdp"-->
-        <!--                    android:paddingVertical="@dimen/_2sdp"-->
-        <!--                    android:paddingHorizontal="@dimen/_7sdp"-->
-        <!--                    android:textColor="@color/white"-->
-        <!--                    android:backgroundTint="#FA713F"-->
-        <!--                    android:background="@drawable/edittxt_drawable"-->
-        <!--                    android:drawableStart="@drawable/location_icon"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/pickup_menu8"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/pickup_menu8" />-->
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-        <!--            <View-->
-        <!--                android:id="@+id/view_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="@dimen/_1sdp"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                android:layout_marginTop="@dimen/_12sdp"-->
-        <!--                android:background="#EDEDED"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/con2_menu8"-->
-        <!--                tools:layout_editor_absoluteX="22dp" />-->
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/categort_menu8"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:text="Items Category*"-->
-        <!--                android:layout_marginTop="@dimen/_10sdp"-->
-        <!--                android:fontFamily="@font/inter_semibold"-->
-        <!--                android:textColor="@color/black"-->
-        <!--                app:layout_constraintStart_toStartOf="@+id/view_menu8"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/view_menu8" />-->
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-
-        <!--                android:id="@+id/con3_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingVertical="@dimen/_10sdp"-->
-        <!--                android:layout_marginTop="@dimen/_8sdp"-->
-        <!--                android:background="@drawable/drawable_food"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/categort_menu8" >-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/food_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:text="Food"-->
-        <!--                    android:layout_marginStart="@dimen/_11sdp"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--                <ImageView-->
-        <!--                    android:id="@+id/down_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginEnd="@dimen/_15sdp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent"-->
-        <!--                    app:srcCompat="@drawable/down_btn" />-->
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-        <!--                android:id="@+id/con4_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingVertical="@dimen/_10sdp"-->
-        <!--                android:layout_marginTop="@dimen/_10sdp"-->
-        <!--                android:background="@drawable/edittxt_drawable"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/con3_menu8">-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/weight_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:text="Total Weight"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:layout_marginStart="@dimen/_11sdp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/textView13"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:text="14.5 Kg"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
-        <!--                    android:fontFamily="@font/inter_semibold"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-
-        <!--                android:id="@+id/con5_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingBottom="@dimen/_16sdp"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                android:layout_marginTop="8dp"-->
-        <!--                android:background="@drawable/drawable_food"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/con4_menu8"-->
-        <!--                tools:layout_editor_absoluteX="16dp">-->
-
-
-        <!--                <ImageView-->
-        <!--                    android:id="@+id/locationblack_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent"-->
-        <!--                    app:srcCompat="@drawable/locationblack_icon" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/drop1_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_5sdp"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Drop 1"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/locationblack_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/locationblack_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/locationblack_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/edit_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_8sdp"-->
-        <!--                    android:fontFamily="@font/inter_semibold"-->
-        <!--                    android:text="Edit"-->
-        <!--                    android:textColor="#0F6FB5"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/drop1_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/drop1_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/drop1_menu8" />-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/map2_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginEnd="@dimen/_7sdp"-->
-        <!--                    android:background="@drawable/edittxt_drawable"-->
-        <!--                    android:backgroundTint="#FA713F"-->
-        <!--                    android:drawableStart="@drawable/location_icon"-->
-        <!--                    android:paddingHorizontal="@dimen/_7sdp"-->
-        <!--                    android:paddingVertical="@dimen/_2sdp"-->
-        <!--                    android:text=" Map"-->
-        <!--                    android:textColor="@color/white"-->
-        <!--                    android:textSize="10sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/edit_menu8"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/edit_menu8" />-->
-
-        <!--                <View-->
-        <!--                    android:id="@+id/view2_menu8"-->
-        <!--                    android:layout_width="20dp"-->
-        <!--                    android:layout_height="1dp"-->
-        <!--                    android:background="#0F6FB5"-->
-        <!--                    app:layout_constraintEnd_toEndOf="@+id/edit_menu8"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/edit_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/edit_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/location2_menu8"-->
-        <!--                    android:layout_width="0dp"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_6sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:layout_marginEnd="@dimen/_15sdp"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/edit_menu8" />-->
-
-        <!--                <View-->
-        <!--                    android:id="@+id/view3_menu8"-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="@dimen/_1sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_7sdp"-->
-        <!--                    android:background="#E3E3E3"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/location2_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/customername_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_8sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Customer Name "-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/view3_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/name_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_22sdp"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Saurabh Kumar"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/customername_menu8"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/customername_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/customername_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/customernumber_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Customer Number "-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customername_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/customername_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/number_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="+91 00000 00000"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/customernumber_menu8"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/name_menu8"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/customernumber_menu8" />-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/weight1_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Item Weight"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customernumber_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/customernumber_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/kg_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="4.5 Kg"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/number_menu8" />-->
-        <!--                <TextView-->
-        <!--                    android:id="@+id/value_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Order Value"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customernumber_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/kg_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/ruppes_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="1250 ₹"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/kg_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/payment_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Collect Payment"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/value_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/value_menu8" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/yes_menu8"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Yes"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu8"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/ruppes_menu8" />-->
-
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-
-        <!--                android:id="@+id/con5_menu9"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:paddingBottom="@dimen/_16sdp"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                android:layout_marginTop="@dimen/_14sdp"-->
-        <!--                android:background="@drawable/drawable_food"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/con5_menu8"-->
-        <!--                tools:layout_editor_absoluteX="16dp">-->
-
-
-        <!--                <ImageView-->
-        <!--                    android:id="@+id/locationblack_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_10sdp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="parent"-->
-        <!--                    app:srcCompat="@drawable/locationblack_icon" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/drop1_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_5sdp"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Drop 1"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="14sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/locationblack_menu9"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/locationblack_menu9"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/locationblack_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/edit_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_8sdp"-->
-        <!--                    android:fontFamily="@font/inter_semibold"-->
-        <!--                    android:text="Edit"-->
-        <!--                    android:textColor="#0F6FB5"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/drop1_menu9"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/drop1_menu9"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/drop1_menu9" />-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/map2_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginEnd="@dimen/_7sdp"-->
-        <!--                    android:background="@drawable/edittxt_drawable"-->
-        <!--                    android:backgroundTint="#FA713F"-->
-        <!--                    android:drawableStart="@drawable/location_icon"-->
-        <!--                    android:paddingHorizontal="@dimen/_7sdp"-->
-        <!--                    android:paddingVertical="@dimen/_2sdp"-->
-        <!--                    android:text=" Map"-->
-        <!--                    android:visibility="gone"-->
-        <!--                    android:textColor="@color/white"-->
-        <!--                    android:textSize="10sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/edit_menu9"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/edit_menu9" />-->
-
-        <!--                <View-->
-        <!--                    android:id="@+id/view2_menu9"-->
-        <!--                    android:layout_width="20dp"-->
-        <!--                    android:layout_height="1dp"-->
-        <!--                    android:background="#0F6FB5"-->
-        <!--                    app:layout_constraintEnd_toEndOf="@+id/edit_menu9"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/edit_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/edit_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/location2_menu9"-->
-        <!--                    android:layout_width="0dp"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_6sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:layout_marginEnd="@dimen/_15sdp"-->
-        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                    android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/edit_menu9" />-->
-
-        <!--                <View-->
-        <!--                    android:id="@+id/view3_menu9"-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="@dimen/_1sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_7sdp"-->
-        <!--                    android:background="#E3E3E3"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/location2_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/customername_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_10sdp"-->
-        <!--                    android:layout_marginTop="@dimen/_8sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Customer Name "-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="parent"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/view3_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/name_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="@dimen/_22sdp"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Saurabh Kumar"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/customername_menu9"-->
-        <!--                    app:layout_constraintStart_toEndOf="@+id/customername_menu9"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/customername_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/customernumber_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Customer Number "-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customername_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/customername_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/number_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="+91 00000 00000"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintBottom_toBottomOf="@+id/customernumber_menu9"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/name_menu9"-->
-        <!--                    app:layout_constraintTop_toTopOf="@+id/customernumber_menu9" />-->
-
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/weight1_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Item Weight"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customernumber_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/customernumber_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/kg_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="4.5 Kg"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/number_menu9" />-->
-        <!--                <TextView-->
-        <!--                    android:id="@+id/value_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Order Value"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/customernumber_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/kg_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/ruppes_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="1250 ₹"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/kg_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/payment_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:fontFamily="@font/inter"-->
-        <!--                    android:text="Collect Payment"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/value_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/value_menu9" />-->
-
-        <!--                <TextView-->
-        <!--                    android:id="@+id/yes_menu9"-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:fontFamily="@font/inter_bold"-->
-        <!--                    android:text="Yes"-->
-        <!--                    android:layout_marginTop="@dimen/_2sdp"-->
-        <!--                    android:textColor="@color/black"-->
-        <!--                    android:textSize="12sp"-->
-        <!--                    app:layout_constraintStart_toStartOf="@+id/number_menu9"-->
-        <!--                    app:layout_constraintTop_toBottomOf="@+id/ruppes_menu9" />-->
-
-
-        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-        <!--            <TextView-->
-        <!--                android:id="@+id/addmore_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:background="@drawable/addmore_drawable"-->
-        <!--                android:drawableStart="@drawable/add_icon"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                android:fontFamily="@font/inter_semibold"-->
-        <!--                android:gravity="center"-->
-        <!--                android:paddingHorizontal="@dimen/_108sdp"-->
-        <!--                android:paddingVertical="@dimen/_12sdp"-->
-        <!--                android:text="Add More"-->
-        <!--                android:layout_marginTop="@dimen/_20sdp"-->
-        <!--                android:textAlignment="center"-->
-        <!--                android:textColor="@color/white"-->
-        <!--                android:textSize="12sp"-->
-
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/con5_menu9" />-->
-
-
-        <!--            <androidx.appcompat.widget.AppCompatButton-->
-        <!--                android:id="@+id/submit_menu8"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginHorizontal="@dimen/_17sdp"-->
-        <!--                android:backgroundTint="#EF5B25"-->
-        <!--                android:layout_marginTop="@dimen/_15sdp"-->
-        <!--                android:background="@drawable/drawable_food"-->
-        <!--                android:paddingVertical="@dimen/_12sdp"-->
-        <!--                android:text="Submit"-->
-        <!--                android:textAllCaps="false"-->
-        <!--                android:layout_marginBottom="@dimen/_20sdp"-->
-        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--                android:textColor="@color/white"-->
-        <!--                android:textSize="16sp"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/addmore_menu8" />-->
-        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-        <!--    </androidx.core.widget.NestedScrollView>-->
+                        android:text="@string/Items_Category"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="@+id/view_menu8"
+                        app:layout_constraintTop_toBottomOf="@+id/view_menu8" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:id="@+id/con3_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/drawable_food"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/categort_menu8" >
+
+
+                        <TextView
+                            android:id="@+id/food_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food"
+                            android:layout_marginStart="@dimen/_11sdp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/down_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/down_btn" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con4_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edittxt_drawable"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/con3_menu8">
+
+
+                        <TextView
+                            android:id="@+id/weight_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Weight"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_marginStart="@dimen/_11sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14.5 Kg"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:id="@+id/con5_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_16sdp"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/drawable_food"
+                        app:layout_constraintTop_toBottomOf="@+id/con4_menu8"
+                         >
+
+
+                        <ImageView
+                            android:id="@+id/locationblack_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/locationblack_icon" />
+
+                        <TextView
+                            android:id="@+id/drop1_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Drop 1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/locationblack_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/locationblack_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/locationblack_menu8" />
+
+                        <TextView
+                            android:id="@+id/edit_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="Edit"
+                            android:textColor="#0F6FB5"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/drop1_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/drop1_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/drop1_menu8" />
+
+
+                        <TextView
+                            android:id="@+id/map2_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:background="@drawable/edittxt_drawable"
+                            android:backgroundTint="#FA713F"
+                            android:drawableStart="@drawable/location_icon"
+                            android:paddingHorizontal="@dimen/_7sdp"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text=" Map"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/edit_menu8"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/edit_menu8" />
+
+                        <View
+                            android:id="@+id/view2_menu8"
+                            android:layout_width="20dp"
+                            android:layout_height="1dp"
+                            android:background="#0F6FB5"
+                            app:layout_constraintEnd_toEndOf="@+id/edit_menu8"
+                            app:layout_constraintStart_toStartOf="@+id/edit_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/edit_menu8" />
+
+                        <TextView
+                            android:id="@+id/location2_menu8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:fontFamily="@font/inter"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/edit_menu8" />
+
+                        <View
+                            android:id="@+id/view3_menu8"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="#E3E3E3"
+                            app:layout_constraintTop_toBottomOf="@+id/location2_menu8" />
+
+                        <TextView
+                            android:id="@+id/customername_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Customer Name "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view3_menu8" />
+
+                        <TextView
+                            android:id="@+id/name_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_22sdp"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Saurabh Kumar"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/customername_menu8"
+                            app:layout_constraintStart_toEndOf="@+id/customername_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/customername_menu8" />
+
+                        <TextView
+                            android:id="@+id/customernumber_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Customer Number "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customername_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/customername_menu8" />
+
+                        <TextView
+                            android:id="@+id/number_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="+91 00000 00000"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/customernumber_menu8"
+                            app:layout_constraintStart_toStartOf="@+id/name_menu8"
+                            app:layout_constraintTop_toTopOf="@+id/customernumber_menu8" />
+
+
+                        <TextView
+                            android:id="@+id/weight1_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Item Weight"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customernumber_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/customernumber_menu8" />
+
+                        <TextView
+                            android:id="@+id/kg_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="4.5 Kg"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/number_menu8" />
+                        <TextView
+                            android:id="@+id/value_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Order Value"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customernumber_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/kg_menu8" />
+
+                        <TextView
+                            android:id="@+id/ruppes_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="1250 ₹"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/kg_menu8" />
+
+                        <TextView
+                            android:id="@+id/payment_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Collect Payment"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/value_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/value_menu8" />
+
+                        <TextView
+                            android:id="@+id/yes_menu8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Yes"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu8"
+                            app:layout_constraintTop_toBottomOf="@+id/ruppes_menu8" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:id="@+id/con5_menu9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_16sdp"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@drawable/drawable_food"
+                        app:layout_constraintTop_toBottomOf="@+id/con5_menu8"
+                        tools:layout_editor_absoluteX="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/locationblack_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/locationblack_icon" />
+
+                        <TextView
+                            android:id="@+id/drop1_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Drop 1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/locationblack_menu9"
+                            app:layout_constraintStart_toEndOf="@+id/locationblack_menu9"
+                            app:layout_constraintTop_toTopOf="@+id/locationblack_menu9" />
+
+                        <TextView
+                            android:id="@+id/edit_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="Edit"
+                            android:textColor="#0F6FB5"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/drop1_menu9"
+                            app:layout_constraintStart_toEndOf="@+id/drop1_menu9"
+                            app:layout_constraintTop_toTopOf="@+id/drop1_menu9" />
+
+
+                        <TextView
+                            android:id="@+id/map2_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:background="@drawable/edittxt_drawable"
+                            android:backgroundTint="#FA713F"
+                            android:drawableStart="@drawable/location_icon"
+                            android:paddingHorizontal="@dimen/_7sdp"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text=" Map"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/edit_menu9"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/edit_menu9" />
+
+                        <View
+                            android:id="@+id/view2_menu9"
+                            android:layout_width="20dp"
+                            android:layout_height="1dp"
+                            android:background="#0F6FB5"
+                            app:layout_constraintEnd_toEndOf="@+id/edit_menu9"
+                            app:layout_constraintStart_toStartOf="@+id/edit_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/edit_menu9" />
+
+                        <TextView
+                            android:id="@+id/location2_menu9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:fontFamily="@font/inter"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="SD-138B, Ahinsa Khand 1, Jaipuria \nService Road, Indirapuram, Ghaziabad"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/edit_menu9" />
+
+                        <View
+                            android:id="@+id/view3_menu9"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:background="#E3E3E3"
+                            app:layout_constraintTop_toBottomOf="@+id/location2_menu9" />
+
+                        <TextView
+                            android:id="@+id/customername_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Customer Name "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view3_menu9" />
+
+                        <TextView
+                            android:id="@+id/name_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_22sdp"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Saurabh Kumar"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/customername_menu9"
+                            app:layout_constraintStart_toEndOf="@+id/customername_menu9"
+                            app:layout_constraintTop_toTopOf="@+id/customername_menu9" />
+
+                        <TextView
+                            android:id="@+id/customernumber_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Customer Number "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customername_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/customername_menu9" />
+
+                        <TextView
+                            android:id="@+id/number_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="+91 00000 00000"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/customernumber_menu9"
+                            app:layout_constraintStart_toStartOf="@+id/name_menu9"
+                            app:layout_constraintTop_toTopOf="@+id/customernumber_menu9" />
+
+
+                        <TextView
+                            android:id="@+id/weight1_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Item Weight"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customernumber_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/customernumber_menu9" />
+
+                        <TextView
+                            android:id="@+id/kg_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="4.5 Kg"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/number_menu9" />
+                        <TextView
+                            android:id="@+id/value_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Order Value"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/customernumber_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/kg_menu9" />
+
+                        <TextView
+                            android:id="@+id/ruppes_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="1250 ₹"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/kg_menu9" />
+
+                        <TextView
+                            android:id="@+id/payment_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/inter"
+                            android:text="Collect Payment"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/value_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/value_menu9" />
+
+                        <TextView
+                            android:id="@+id/yes_menu9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="Yes"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/number_menu9"
+                            app:layout_constraintTop_toBottomOf="@+id/ruppes_menu9" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_add_more"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/submit_menu8"
+                        app:layout_constraintStart_toStartOf="@+id/submit_menu8"
+                        app:layout_constraintTop_toBottomOf="@+id/con5_menu9"
+                        android:background="@drawable/addmore_drawable">
+
+
+                        <ImageView
+                            android:id="@+id/ic_addmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/add_icon"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_add_more"
+                            app:layout_constraintTop_toTopOf="@+id/txt_add_more"
+                            app:layout_constraintEnd_toStartOf="@+id/txt_add_more"/>
+
+                        <TextView
+                            android:id="@+id/txt_add_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add More"
+                            android:fontFamily="@font/inter_semibold"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/submit_menu8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_17sdp"
+                        android:backgroundTint="#EF5B25"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/drawable_food"
+                        android:paddingVertical="@dimen/_12sdp"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_add_more" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
