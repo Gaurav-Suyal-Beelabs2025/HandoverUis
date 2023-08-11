@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/confirm_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Check In"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="#909090"
+            android:fontFamily="@font/space_grotesk_medium"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+          <ImageView
+              android:id="@+id/img_datepicker"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/datepicker"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="@dimen/_15sdp"
+              android:layout_marginTop="@dimen/_12sdp"
+              app:layout_constraintTop_toBottomOf="@+id/confirm_in"/>
+
+
+            <TextView
+                android:id="@+id/txt_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3D3D3D"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:text="Today"
+                android:layout_marginStart="@dimen/_7sdp"
+                app:layout_constraintBottom_toBottomOf="@id/img_datepicker"
+                app:layout_constraintStart_toEndOf="@id/img_datepicker"
+                app:layout_constraintTop_toTopOf="@id/img_datepicker"
+                android:fontFamily="@font/space_grotesk_medium"/>
+
+
+             <TextView
+                 android:id="@+id/txt_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="21 May, 2023"
+                 android:textAllCaps="false"
+                 android:textSize="24sp"
+                 android:textColor="#3D3D3D"
+                 android:fontFamily="@font/space_grotesk_bold"
+                 app:layout_constraintStart_toStartOf="@id/img_datepicker"
+                 app:layout_constraintTop_toBottomOf="@id/img_datepicker"/>
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/space_grotesk_medium"
+            android:text="Address"
+            android:textAllCaps="false"
+            android:textColor="#3D3D3D"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@+id/txt_date"
+            app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/layout_Address"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="@dimen/_40sdp"
+              android:backgroundTint="#F6F9FF"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:layout_marginHorizontal="@dimen/_15sdp"
+              android:background="@drawable/edit_text_background"
+              app:layout_constraintTop_toBottomOf="@id/txt_address">
+
+              <EditText
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/_8sdp"
+                  android:fontFamily="@font/space_grotesk_medium"
+                  android:hint="Ex. Noida 63"
+                  android:layout_marginStart="@dimen/_12sdp"
+                  android:background="#F6F9FF"
+                  android:textAllCaps="false"
+                  android:textColor="#88A9B4"
+                  android:textColorHint="#88A9B4"
+                  android:textSize="14sp"
+                  android:layout_marginEnd="@dimen/_20sdp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/txt_reporting_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/space_grotesk_medium"
+            android:text="Reporting Manager"
+            android:textAllCaps="false"
+            android:textColor="#3D3D3D"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_27sdp"
+            app:layout_constraintStart_toStartOf="@+id/txt_address"
+            app:layout_constraintTop_toBottomOf="@id/layout_Address" />
+
+
+        <TextView
+            android:id="@+id/txt_Worked_For"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/space_grotesk_medium"
+            android:text="Worked For"
+            android:textAllCaps="false"
+            android:textColor="#3D3D3D"
+            android:textSize="14sp"
+            android:layout_marginEnd="@dimen/_38sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_reporting_manager"/>
+
+
+            <ImageView
+                android:id="@+id/img_ellipsegre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ellipsegre"
+                android:layout_marginTop="@dimen/_4sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_reporting_manager"
+                app:layout_constraintTop_toBottomOf="@id/txt_reporting_manager"/>
+
+        <TextView
+            android:id="@+id/name_swiggy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/space_grotesk"
+            android:text="Abhishek / Swiggy"
+            android:textAllCaps="false"
+            android:textColor="#3D3D3D"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/img_ellipsegre"
+            app:layout_constraintTop_toTopOf="@id/img_ellipsegre" />
+
+           <ImageView
+               android:id="@+id/img_ellipsegre_worked"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ellipsegre"
+               app:layout_constraintStart_toStartOf="@id/txt_Worked_For"
+               app:layout_constraintTop_toTopOf="@id/img_ellipsegre"/>
+
+              <TextView
+                  android:id="@+id/txt_swiggy"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="@dimen/_4sdp"
+                  android:fontFamily="@font/space_grotesk"
+                  android:text="Swiggy"
+                  android:textAllCaps="false"
+                  android:textColor="#3D3D3D"
+                  android:textSize="14sp"
+                  app:layout_constraintStart_toEndOf="@id/img_ellipsegre_worked"
+                  app:layout_constraintTop_toTopOf="@id/name_swiggy"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_48sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/name_swiggy">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ED4E61"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:text="Cancle"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#F6F9FF"
+                            android:background="@drawable/cnacle_button"
+                            android:fontFamily="@font/space_grotesk_bold"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3D3D3D"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:text="Mark In"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:backgroundTint="#94FF8B"
+                        android:background="@drawable/cnacle_button"
+                        android:fontFamily="@font/space_grotesk_bold"/>
+
+
+
+                </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
