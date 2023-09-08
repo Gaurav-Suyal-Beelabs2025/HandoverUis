@@ -7,4 +7,23 @@
     <string name="menu_details">Menu Details</string>
     <string name="select_a_category">Select a category</string>
     <string name="vej">  Vej  </string>
+    <string name="allow">           Allow          </string>
+
+
+    <string-array name="category">
+
+        <item>select a category</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+        <item>food</item>
+
+
+    </string-array>
 </resources>

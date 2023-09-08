@@ -1,14 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Location_Permission_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt_speedtest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:text=" Precise Location"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="@dimen/_31sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_Handover_needs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Handover needs certain permissions to function correctly"
+                android:textAllCaps="false"
+                android:textColor="#686868"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/txt_speedtest"
+                app:layout_constraintEnd_toEndOf="@+id/txt_speedtest"
+                app:layout_constraintTop_toBottomOf="@+id/txt_speedtest" />
+
+
+              <ImageView
+                  android:id="@+id/img_smartphone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/smartphone"
+                  android:layout_marginTop="@dimen/_85sdp"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/txt_Handover_needs"/>
+
+
+
+            <ImageView
+                android:id="@+id/ic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notification__2_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_smartphone"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_50sdp"/>
+
+            <TextView
+                android:id="@+id/txt_Location_Permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification Permission"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/inter_semibold"
+                app:layout_constraintBottom_toBottomOf="@id/ic_location"
+                app:layout_constraintTop_toTopOf="@id/ic_location"
+                app:layout_constraintStart_toEndOf="@id/ic_location"/>
+
+            <TextView
+                android:id="@+id/txt_Handover_uses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Handover uses your precise location to identify near by serviceable areas and delivery partners avalibility."
+                android:textAllCaps="false"
+                android:textColor="#686868"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_Location_Permission"
+                app:layout_constraintStart_toStartOf="@id/ic_location"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="Continue"
+                android:gravity="center"
+                android:background="@drawable/button_not_allow"
+                android:backgroundTint="#EF5B25"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_11sdp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_Handover_uses"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

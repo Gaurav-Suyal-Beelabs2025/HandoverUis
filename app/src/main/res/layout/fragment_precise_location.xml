@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SpeedTest_Fragment">
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
   <TextView
@@ -12,7 +24,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:fontFamily="@font/inter_semibold"
-      android:text="Speedtest Accuracy"
+      android:text=" Precise Location"
       android:textAllCaps="false"
       android:textColor="@color/black"
       android:textSize="30sp"
@@ -22,21 +34,148 @@
       app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
+      android:id="@+id/txt_Handover_needs"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_9sdp"
       android:fontFamily="@font/inter"
-      android:text="On the other hand, we denounce with righteous indignation and dislike men."
+      android:gravity="center"
+      android:text="Handover needs certain permissions to function correctly"
       android:textAllCaps="false"
       android:textColor="#686868"
       android:textSize="16sp"
-      android:gravity="center"
-      android:layout_marginTop="@dimen/_9sdp"
-      android:layout_marginHorizontal="@dimen/_15sdp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="@id/txt_speedtest"
+      app:layout_constraintEnd_toEndOf="@+id/txt_speedtest"
       app:layout_constraintTop_toBottomOf="@+id/txt_speedtest" />
 
-       
+    <ImageView
+        android:id="@+id/ic_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_Handover_needs"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_34sdp"/>
+
+      <TextView
+          android:id="@+id/txt_Location_Permission"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Location Permission"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:textAllCaps="false"
+          android:layout_marginStart="@dimen/_8sdp"
+          android:fontFamily="@font/inter_semibold"
+          app:layout_constraintBottom_toBottomOf="@id/ic_location"
+          app:layout_constraintTop_toTopOf="@id/ic_location"
+          app:layout_constraintStart_toEndOf="@id/ic_location"/>
+
+         <TextView
+             android:id="@+id/txt_Handover_uses"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:text="Handover uses your precise location to identify near by serviceable areas and delivery partners avalibility."
+             android:textAllCaps="false"
+             android:textColor="#686868"
+             android:textSize="16sp"
+             android:fontFamily="@font/inter"
+             android:layout_marginTop="@dimen/_7sdp"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginEnd="@dimen/_14sdp"
+             app:layout_constraintTop_toBottomOf="@id/txt_Location_Permission"
+             app:layout_constraintStart_toStartOf="@id/ic_location"/>
+
+
+           <LinearLayout
+               android:id="@+id/layout_image"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginHorizontal="@dimen/_35sdp"
+               android:layout_marginTop="@dimen/_32sdp"
+               app:layout_constraintTop_toBottomOf="@id/txt_Handover_uses">
+
+               <LinearLayout
+                   android:id="@+id/layout_Precise"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/frame_427321774"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Precise"
+                     android:textSize="16sp"
+                     android:textColor="#263238"
+                     android:textAllCaps="false"
+                     android:layout_marginEnd="@dimen/_5sdp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                      android:layout_gravity="center"
+                     android:fontFamily="@font/inter"/>
+
+               </LinearLayout>
+
+
+             <LinearLayout
+                 android:id="@+id/layout_Approximate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginStart="@dimen/_15sdp"
+                 android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/frame_427321774"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Approximate"
+                   android:textSize="16sp"
+                   android:textColor="#263238"
+                   android:textAllCaps="false"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/inter"/>
+
+             </LinearLayout>
+
+           </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Continue"
+            android:gravity="center"
+            android:background="@drawable/button_not_allow"
+            android:backgroundTint="#EF5B25"
+            android:layout_marginTop="@dimen/_170sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_11sdp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_image"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

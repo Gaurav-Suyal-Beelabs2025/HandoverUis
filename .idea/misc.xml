@@ -6,6 +6,7 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/add_photo.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/border.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/button_background.xml" value="0.203" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/button_not_allow.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/buttondegins.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/category_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/change.xml" value="0.203" />
@@ -23,22 +24,28 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/ic_share.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/ic_support.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/leave_approved.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/location_with_map.xml" value="0.121" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/screenshot_2023_09_07_at_1_28_1.xml" value="0.121" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/store_details.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/vej_nonvej_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/drawable/view_declaration.xml" value="0.203" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/font/font.xml" value="0.2765625" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/font/space_grotesk.xml" value="0.2765625" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/allow_alltime.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/apply_for_leave.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/confirm_check_out.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/confirm_checkin.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_attendance_.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_charging_.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_coupon_offers.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_dashboard_.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_earning_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_finger_verification.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_handever_id_card_.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_location__permission_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_profile_.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_speed_test_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_vehicle__details.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/layout/fragment_vehicle__details_.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handever/app/src/main/res/menu/menu.xml" value="0.24635416666666668" />

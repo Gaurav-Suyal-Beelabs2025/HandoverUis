@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Coupon_offersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_button"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_locaton_with_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@drawable/frame_427321774"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_help_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Help Us Build Global Coverage Maps"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_locaton_with_map" />
+
+
+        <TextView
+            android:id="@+id/txt_on_the_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment."
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_help_us" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <LinearLayout
+          android:id="@+id/layout_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="@dimen/_17sdp"
+          android:layout_marginBottom="@dimen/_31sdp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:gravity="center"
+              android:layout_weight="1"
+              android:paddingVertical="@dimen/_12sdp"
+              android:background="@drawable/button_not_allow"
+              android:textColor="@color/black"
+              android:text="Do not  allow"
+              android:fontFamily="@font/inter_semibold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:layout_weight="1"
+              android:backgroundTint="#EF5B25"
+              android:layout_marginStart="@dimen/_12sdp"
+              android:paddingVertical="@dimen/_12sdp"
+              android:background="@drawable/button_not_allow"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:text="       Allow         "
+              android:fontFamily="@font/inter_semibold"/>
+
+      </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

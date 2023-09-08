@@ -9,393 +9,492 @@
 
 
 
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/toolbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:paddingVertical="@dimen/_12sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_button"
         app:layout_constraintTop_toTopOf="parent">
 
+
+
         <ImageView
-            android:id="@+id/back_btn"
+            android:id="@+id/img_locaton_with_map"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:background="@drawable/ic_left_arraow"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@drawable/frame_427321774"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/profile"
+            android:id="@+id/txt_help_us"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:fontFamily="@font/space_grotesk_bold"
-            android:text="Vehicle Details"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Help Us Build Global Coverage Maps"
+            android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@id/back_btn"
-            app:layout_constraintEnd_toStartOf="@+id/support"
-            app:layout_constraintStart_toEndOf="@+id/back_btn"
-            app:layout_constraintTop_toBottomOf="@id/back_btn"
-            app:layout_constraintTop_toTopOf="@id/back_btn" />
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_locaton_with_map" />
 
-        <ImageView
-            android:id="@+id/support"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_support"
-            android:layout_marginEnd="@dimen/_5sdp"
-            app:layout_constraintBottom_toBottomOf="@id/profile"
-            app:layout_constraintEnd_toStartOf="@+id/help_txt"
-            app:layout_constraintTop_toTopOf="@id/profile" />
 
         <TextView
-            android:id="@+id/help_txt"
-            android:layout_width="wrap_content"
+            android:id="@+id/txt_on_the_other"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_15sdp"
-            android:fontFamily="@font/space_grotesk_bold"
-            android:text="help"
-            android:textColor="#717171"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/support"
+            android:layout_marginHorizontal="@dimen/_19sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment."
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/support" />
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_help_us" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
+        android:id="@+id/layout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+        android:layout_marginHorizontal="@dimen/_17sdp"
+        android:layout_marginBottom="@dimen/_31sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/_12sdp"
+            android:background="@drawable/button_not_allow"
+            android:textColor="@color/black"
+            android:text="Do not  allow"
+            android:fontFamily="@font/inter_semibold"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:backgroundTint="#EF5B25"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:background="@drawable/button_not_allow"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="       Allow         "
+            android:fontFamily="@font/inter_semibold"/>
 
-            <ImageView
-                android:id="@+id/img_bike"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pngegg__1__1"
-                android:layout_marginTop="@dimen/_20sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-
-            <TextView
-                android:id="@+id/txt_two_wheeler"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Hero Splender+"
-                android:textAllCaps="false"
-                android:textColor="#26AE6D"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="@id/img_bike"
-                app:layout_constraintTop_toBottomOf="@id/img_bike" />
-
-
-            <TextView
-                android:id="@+id/txt_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Rajeev’s Bike"
-                android:textAllCaps="false"
-                android:textColor="#686868"
-                android:textSize="16sp"
-                app:layout_constraintTop_toBottomOf="@+id/txt_two_wheeler"
-                app:layout_constraintStart_toStartOf="@+id/txt_two_wheeler"
-                tools:layout_editor_absoluteY="340dp" />
+    </LinearLayout>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/change"
-                android:text="Change"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:backgroundTint="#1A063F"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:paddingHorizontal="@dimen/_20sdp"
-                android:textSize="12sp"
-                android:paddingVertical="@dimen/_4sdp"
-                app:layout_constraintBottom_toBottomOf="@+id/txt_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/txt_two_wheeler" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#EDEDED"
-                android:elevation="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                app:layout_constraintTop_toBottomOf="@id/txt_name" />
-
-            <TextView
-                android:id="@+id/txt_Manufacture"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manufacture"
-                android:textSize="16sp"
-                android:textAllCaps="false"
-                android:layout_marginTop="@dimen/_18sdp"
-                android:textColor="#909090"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="@dimen/_15sdp"
-                app:layout_constraintTop_toBottomOf="@id/view"
-                android:fontFamily="@font/space_grotesk_bold" />
 
 
-            <TextView
-                android:id="@+id/txt_Hero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hero"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                android:fontFamily="@font/space_grotesk_semibold"
-                app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"
-                app:layout_constraintTop_toBottomOf="@+id/txt_Manufacture" />
 
-            <TextView
-                android:id="@+id/txt_fuel_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Fuel Type"
-                android:textAllCaps="false"
-                android:textColor="#909090"
-                android:textSize="16sp"
-                android:layout_marginEnd="@dimen/_63sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/txt_Manufacture" />
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/toolbar_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:paddingVertical="@dimen/_12sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
-            <TextView
-                android:id="@+id/txt_Petrol"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_semibold"
-                android:text="Petrol"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_fuel_type"
-                app:layout_constraintTop_toBottomOf="@+id/txt_fuel_type" />
+<!--        <ImageView-->
+<!--            android:id="@+id/back_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="@dimen/_15sdp"-->
+<!--            android:background="@drawable/ic_left_arraow"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
+<!--        <TextView-->
+<!--            android:id="@+id/profile"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_8sdp"-->
+<!--            android:fontFamily="@font/space_grotesk_bold"-->
+<!--            android:text="Vehicle Details"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="24sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/back_btn"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/support"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/back_btn"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/back_btn"-->
+<!--            app:layout_constraintTop_toTopOf="@id/back_btn" />-->
 
-            <TextView
-                android:id="@+id/txt_Model"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Model"
-                android:textAllCaps="false"
-                android:textColor="#909090"
-                android:textSize="16sp"
-                android:layout_marginTop="@dimen/_12sdp"
-                app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"
-                app:layout_constraintTop_toBottomOf="@+id/txt_Hero" />
+<!--        <ImageView-->
+<!--            android:id="@+id/support"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_support"-->
+<!--            android:layout_marginEnd="@dimen/_5sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/profile"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/help_txt"-->
+<!--            app:layout_constraintTop_toTopOf="@id/profile" />-->
 
-            <TextView
-                android:id="@+id/txt_Splender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_semibold"
-                android:text="Splender"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_Model"
-                app:layout_constraintTop_toBottomOf="@+id/txt_Model" />
+<!--        <TextView-->
+<!--            android:id="@+id/help_txt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_15sdp"-->
+<!--            android:fontFamily="@font/space_grotesk_bold"-->
+<!--            android:text="help"-->
+<!--            android:textColor="#717171"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/support"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/support" />-->
 
 
-            <TextView
-                android:id="@+id/txt_Year"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Year"
-                android:textAllCaps="false"
-                android:textColor="#909090"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_Petrol"
-                app:layout_constraintTop_toTopOf="@+id/txt_Model" />
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
-            <TextView
-                android:id="@+id/txt_year"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_semibold"
-                android:text="2017"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_Year"
-                app:layout_constraintTop_toBottomOf="@+id/txt_Year" />
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
 
-            <TextView
-                android:id="@+id/txt_vehicle_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Vehicle type"
-                android:textAllCaps="false"
-                android:textColor="#909090"
-                android:textSize="16sp"
-                android:layout_marginTop="@dimen/_12sdp"
-                app:layout_constraintStart_toStartOf="@+id/txt_Splender"
-                app:layout_constraintTop_toBottomOf="@+id/txt_Splender" />
+<!--            <ImageView-->
+<!--                android:id="@+id/img_bike"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/pngegg__1__1"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
 
 
-            <TextView
-                android:id="@+id/txt_Hero01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_semibold"
-                android:text="Hero"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"
-                app:layout_constraintTop_toBottomOf="@+id/txt_vehicle_type" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_two_wheeler"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_30sdp"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Hero Splender+"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#26AE6D"-->
+<!--                android:textSize="20sp"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img_bike"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/img_bike" />-->
 
 
-            <TextView
-                android:id="@+id/txt_seat_capacity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Seat capacity"
-                android:textAllCaps="false"
-                android:textColor="#909090"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_year"
-                app:layout_constraintTop_toTopOf="@+id/txt_vehicle_type" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Rajeev’s Bike"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#686868"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_two_wheeler"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_two_wheeler"-->
+<!--                tools:layout_editor_absoluteY="340dp" />-->
 
 
-            <TextView
-                android:id="@+id/txt_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_semibold"
-                android:text="1"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/txt_seat_capacity"
-                app:layout_constraintTop_toBottomOf="@+id/txt_seat_capacity" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/change"-->
+<!--                android:text="Change"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:backgroundTint="#1A063F"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:paddingHorizontal="@dimen/_20sdp"-->
+<!--                android:textSize="12sp"-->
+<!--                android:paddingVertical="@dimen/_4sdp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/txt_name"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_two_wheeler" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#EDEDED"-->
+<!--                android:elevation="@dimen/_20sdp"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/txt_name" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Manufacture"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Manufacture"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:layout_marginTop="@dimen/_18sdp"-->
+<!--                android:textColor="#909090"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/view"-->
+<!--                android:fontFamily="@font/space_grotesk_bold" />-->
 
 
-            <View
-                android:id="@+id/view2"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="@dimen/_18sdp"
-                android:background="#F1F1F1"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/_15sdp"
-                app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"
-                app:layout_constraintTop_toBottomOf="@id/txt_number" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Hero"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Hero"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_Manufacture" />-->
 
-            <ImageView
-                android:id="@+id/img_error"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_18sdp"
-                android:src="@drawable/group_33696"
-                app:layout_constraintStart_toStartOf="@id/txt_vehicle_type"
-                app:layout_constraintTop_toBottomOf="@id/view2" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_fuel_type"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Fuel Type"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#909090"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_marginEnd="@dimen/_63sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_Manufacture" />-->
 
-
-            <TextView
-                android:id="@+id/txt_applicable"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:text="Applicable for Food, Grocery and small Package Deliveries."
-                android:textAllCaps="false"
-                android:textColor="#717171"
-                android:textSize="16sp"
-                android:layout_marginStart="@dimen/_8sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/_10sdp"
-                app:layout_constraintStart_toEndOf="@+id/img_error"
-                app:layout_constraintTop_toTopOf="@+id/img_error" />
-
-
-            <TextView
-                android:id="@+id/txt_check_health"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/check_health"
-                android:text="Check health"
-                android:backgroundTint="#F6F9FF"
-                android:textAllCaps="false"
-                android:textColor="#3D3D3D"
-                android:textSize="14sp"
-                android:fontFamily="@font/space_grotesk_bold"
-                android:paddingVertical="@dimen/_7sdp"
-                android:paddingHorizontal="@dimen/_40sdp"
-                android:layout_marginTop="@dimen/_70sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_applicable" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                android:background="@drawable/change_vehicle"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_17sdp"
-                android:paddingVertical="@dimen/_10sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="@dimen/_60sdp"
-                app:layout_constraintTop_toBottomOf="@+id/txt_check_health"
-                tools:layout_editor_absoluteX="19dp">
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Petrol"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                android:text="Petrol"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_fuel_type"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_fuel_type" />-->
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/space_grotesk_semibold"
-                    android:gravity="center"
-                    android:text="Change Vehicle"
-                    android:textAllCaps="false"
-                    android:textColor="#3D3D3D"
-                    android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Model"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Model"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#909090"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_marginTop="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Manufacture"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_Hero" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Splender"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                android:text="Splender"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Model"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_Model" />-->
 
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/wright_black"
-                    android:layout_marginStart="@dimen/_5sdp" />
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Year"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Year"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#909090"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Petrol"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_Model" />-->
 
 
-            </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_year"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                android:text="2017"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Year"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_Year" />-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.core.widget.NestedScrollView>
+<!--            <TextView-->
+<!--                android:id="@+id/txt_vehicle_type"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Vehicle type"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#909090"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_marginTop="@dimen/_12sdp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_Splender"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_Splender" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_Hero01"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                android:text="Hero"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_vehicle_type" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_seat_capacity"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Seat capacity"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#909090"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_year"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/txt_vehicle_type" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_number"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                android:text="1"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_seat_capacity"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_seat_capacity" />-->
+
+
+<!--            <View-->
+<!--                android:id="@+id/view2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginTop="@dimen/_18sdp"-->
+<!--                android:background="#F1F1F1"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_vehicle_type"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/txt_number" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_error"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_18sdp"-->
+<!--                android:src="@drawable/group_33696"-->
+<!--                app:layout_constraintStart_toStartOf="@id/txt_vehicle_type"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/view2" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_applicable"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:text="Applicable for Food, Grocery and small Package Deliveries."-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#717171"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/img_error"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/img_error" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_check_health"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/check_health"-->
+<!--                android:text="Check health"-->
+<!--                android:backgroundTint="#F6F9FF"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#3D3D3D"-->
+<!--                android:textSize="14sp"-->
+<!--                android:fontFamily="@font/space_grotesk_bold"-->
+<!--                android:paddingVertical="@dimen/_7sdp"-->
+<!--                android:paddingHorizontal="@dimen/_40sdp"-->
+<!--                android:layout_marginTop="@dimen/_70sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_applicable" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="@dimen/_15sdp"-->
+<!--                android:background="@drawable/change_vehicle"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="@dimen/_17sdp"-->
+<!--                android:paddingVertical="@dimen/_10sdp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                android:layout_marginBottom="@dimen/_60sdp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_check_health"-->
+<!--                tools:layout_editor_absoluteX="19dp">-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/space_grotesk_semibold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Change Vehicle"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="#3D3D3D"-->
+<!--                    android:textSize="20sp" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/wright_black"-->
+<!--                    android:layout_marginStart="@dimen/_5sdp" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
 
 
 

@@ -1,6 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp">
+
+        <ImageView
+            android:id="@+id/ic_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_cancle__2_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_allow_alltime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_26sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Allow all the time permission in your settings as below"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ic_cancle" />
+
+        <ImageView
+            android:id="@+id/ic_radiobutton_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:src="@drawable/ic_radiobutton"
+            app:layout_constraintStart_toStartOf="@id/txt_allow_alltime"
+            app:layout_constraintTop_toBottomOf="@id/txt_allow_alltime" />
+
+        <TextView
+            android:id="@+id/txt_all_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:fontFamily="@font/inter"
+            android:text="Allow all the time"
+            android:textAllCaps="false"
+            android:textColor="#263238"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/ic_radiobutton_select"
+            app:layout_constraintTop_toTopOf="@id/ic_radiobutton_select" />
+
+
+          <ImageView
+              android:id="@+id/img_right"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_right"
+              android:layout_marginEnd="@dimen/_22sdp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="@id/ic_radiobutton_select"/>
+
+
+             <ImageView
+                 android:id="@+id/img_radiobuton_unselect"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_12sdp"
+                 android:src="@drawable/radiobutton_unselect"
+                 app:layout_constraintTop_toBottomOf="@id/ic_radiobutton_select"
+                 app:layout_constraintStart_toStartOf="@id/ic_radiobutton_select"/>
+
+        <TextView
+            android:id="@+id/txt_Allow_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Allow location"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_all_time"
+            app:layout_constraintTop_toTopOf="@id/img_radiobuton_unselect" />
+
+
+           <ImageView
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:src="@drawable/ic_canclered"
+               app:layout_constraintTop_toTopOf="@id/img_radiobuton_unselect"
+               app:layout_constraintStart_toStartOf="@id/img_right"/>
+
+
+        <ImageView
+            android:id="@+id/img_radiobuton_unselect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/radiobutton_unselect"
+            app:layout_constraintTop_toBottomOf="@id/img_radiobuton_unselect"
+            app:layout_constraintStart_toStartOf="@id/img_radiobuton_unselect"/>
+
+
+        <TextView
+            android:id="@+id/txt_Allow_location2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Allow location"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_all_time"
+            app:layout_constraintTop_toTopOf="@id/img_radiobuton_unselect2" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_canclered"
+            app:layout_constraintTop_toTopOf="@id/img_radiobuton_unselect2"
+            app:layout_constraintStart_toStartOf="@id/img_right"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginTop="@dimen/_65sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_radiobuton_unselect2"
+            android:background="@drawable/button_not_allow"
+            android:backgroundTint="#EF5B25"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
