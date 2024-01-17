@@ -24,11 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_15sdp"
-            android:background="@drawable/ic_left_arraow"
+            android:background="@drawable/arrow_back_black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/profile"
@@ -36,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8sdp"
             android:fontFamily="@font/inter_bold"
-            android:text="Add Items &amp; Details "
+            android:text="@string/add_store_details"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@id/back_btn"
@@ -63,7 +62,7 @@
         android:id="@+id/layout_store_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F6F6F6"
+        android:background="#EEF8FF"
         android:paddingVertical="@dimen/_7sdp"
        app:layout_constraintTop_toTopOf="parent">
 
@@ -93,8 +92,9 @@
             android:fontFamily="@font/inter_medium"
             android:text="@string/store_details"
             android:textAllCaps="false"
-            android:textColor="#808080"
-            android:textSize="12sp"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            android:textFontWeight="500"
             app:layout_constraintBottom_toBottomOf="@id/txt_number1"
             app:layout_constraintStart_toEndOf="@id/txt_number1"
             app:layout_constraintTop_toTopOf="@id/txt_number1" />
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_145sdp"
             android:background="@drawable/store_details"
-            android:backgroundTint="#EBEBEB"
+            android:backgroundTint="#686868"
             android:fontFamily="@font/inter_bold"
             android:paddingHorizontal="@dimen/_7sdp"
             android:paddingVertical="@dimen/_3sdp"
@@ -131,15 +131,16 @@
 
 
         <TextView
-            android:id="@+id/txt_menu_details"
+            android:id="@+id/txt_upload_picture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
-            android:fontFamily="@font/inter_medium"
-            android:text="@string/menu_details"
+            android:fontFamily="@font/inter"
+            android:text="@string/upload_picture"
             android:textAllCaps="false"
-            android:textColor="#808080"
-            android:textSize="12sp"
+            android:textColor="#686868"
+            android:textSize="16sp"
+            android:textFontWeight="400"
             app:layout_constraintBottom_toBottomOf="@+id/store_details"
             app:layout_constraintStart_toEndOf="@id/txt_number2"
             app:layout_constraintTop_toTopOf="@+id/store_details" />
@@ -148,90 +149,52 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout_Add_same"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/layout_store_details"
-        android:background="@drawable/category_drawable"
-        android:layout_marginTop="@dimen/_13sdp"
-        android:layout_marginHorizontal="@dimen/_15sdp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Add same details as previous"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:paddingVertical="@dimen/_15sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/inter_medium"/>
-
-
+        <TextView
+            android:id="@+id/tv_add_same_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_same_details_as_previous"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textFontWeight="500"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_store_details"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/inter_medium"/>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toTopOf="@id/tv_add_same_details"
+            app:layout_constraintBottom_toBottomOf="@id/tv_add_same_details"
+            />
 
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <TextView
-        android:id="@+id/txt_business_name"
-        android:layout_width="wrap_content"
+        <EditText
+        android:id="@+id/layout_Add_same"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:text="Business Name"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_19sdp"
-        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@+id/layout_Add_same" />
-
-
-    <EditText
-        android:id="@+id/edit_the_sweet"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+            android:backgroundTint="#F7F8FA"
+            android:paddingVertical="@dimen/_10sdp"
+        android:hint="Business name"
+            android:textFontWeight="400"
+            android:textColorHint="#90A2AF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:textColor="#90A2AF"
+        android:fontFamily="@font/inter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_same_details"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="Ex. The Sweet House Shoppie"
-        android:textAllCaps="false"
-        android:textColor="#808080"
-        android:singleLine="true"
-        android:textColorHint="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_11sdp"
-        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
-        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_business_name" />
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"/>
 
 
-    <TextView
-        android:id="@+id/txt_Category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:text="Category"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/txt_business_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_the_sweet" />
 
 
 
@@ -241,49 +204,22 @@
         android:layout_height="wrap_content"
         android:entries="@array/category"
         android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_8sdp"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Category"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_Add_same"
         android:background="@drawable/category_drawable"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginHorizontal="@dimen/_15sdp">
-
-<!--        <TextView-->
-<!--            android:id="@+id/txt_select_a_category"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="@string/select_a_category"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="12sp"-->
-<!--            android:paddingVertical="@dimen/_15sdp"-->
-<!--            android:layout_marginStart="@dimen/_10sdp"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            android:fontFamily="@font/inter_medium"/>-->
-
-
-
-<!--        <Spinner-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/arrow_down_black"-->
-<!--            android:layout_marginEnd="@dimen/_15sdp"-->
-<!--            android:entries="@array/category"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
-
-    </Spinner>
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"/>
 
 
     <TextView
         android:id="@+id/txt_food_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:text="Food Type"
+        android:fontFamily="@font/inter"
+        android:text="@string/food_type"
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textColor="#686868"
+        android:textSize="16sp"
         android:layout_marginTop="@dimen/_14sdp"
         app:layout_constraintStart_toStartOf="@+id/layout_select_category"
         app:layout_constraintTop_toBottomOf="@+id/layout_select_category" />
@@ -294,7 +230,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_9sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_select_category"
         app:layout_constraintStart_toStartOf="@+id/layout_select_category"
         app:layout_constraintTop_toBottomOf="@id/txt_food_type">
@@ -334,18 +270,6 @@
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/txt_mobile_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Mobile Number"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/txt_Category"
-        app:layout_constraintTop_toBottomOf="@id/layout_veg_nonveg" />
 
 
 
@@ -354,32 +278,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
+        android:backgroundTint="#F7F8FA"
         android:fontFamily="@font/inter_medium"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:textAllCaps="false"
-        android:textColor="#808080"
-        android:hint="+91 00000 00000"
-        android:textColorHint="#808080"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:textFontWeight="400"
+        android:textColor="#90A2AF"
+        android:hint="@string/mobile_number"
+        android:textColorHint="#90A2AF"
+        android:layout_marginTop="@dimen/_12sdp"
         android:paddingStart="@dimen/_10sdp"
         android:paddingVertical="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
         app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_mobile_number" />
+        app:layout_constraintTop_toBottomOf="@id/layout_veg_nonveg" />
 
-    <TextView
-        android:id="@+id/txt_whatapp_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="WhatApp Number"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/txt_Category"
-        app:layout_constraintTop_toBottomOf="@id/edit_mobilenumber" />
 
 
     <EditText
@@ -387,118 +300,73 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="+91 00000 00000"
-        android:textColorHint="#808080"
+        android:backgroundTint="#F7F8FA"
+        android:fontFamily="@font/inter"
+        android:hint="@string/whatsaap_number"
+        android:textColorHint="#90A2AF"
         android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#90A2AF"
+        android:textSize="16sp"
+        android:textFontWeight="400"
+        android:layout_marginTop="@dimen/_12sdp"
         android:paddingStart="@dimen/_10sdp"
         android:paddingVertical="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
         app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_whatapp_number" />
+        app:layout_constraintTop_toBottomOf="@id/edit_mobilenumber" />
 
     <CheckBox
         android:id="@+id/checkbox_whatappnuber"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_20sdp"
-        android:text="Mark same as mobile no."
+        android:text="@string/mark_same_as_mobile_no"
         android:layout_marginTop="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="@+id/edit_whatapp_number"
         app:layout_constraintTop_toBottomOf="@+id/edit_whatapp_number" />
 
 
-    <TextView
-        android:id="@+id/txt_whatapp_number2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="WhatApp Number"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/txt_Category"
-        app:layout_constraintTop_toBottomOf="@id/checkbox_whatappnuber" />
 
-
-    <EditText
-        android:id="@+id/edit_whatapp_number2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="+91 00000 00000"
-        android:textColorHint="#808080"
-        android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_11sdp"
-        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
-        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_whatapp_number2" />
-
-
-    <TextView
-        android:id="@+id/txt_Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Address"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/txt_Category"
-        app:layout_constraintTop_toBottomOf="@id/edit_whatapp_number2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_Address"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintEnd_toEndOf="@+id/edit_whatapp_number2"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@id/txt_Address">
+        android:backgroundTint="#F7F8FA"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_whatapp_number"
+        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_whatappnuber">
 
 
         <TextView
-            android:id="@+id/txt_Lorem"
-            android:layout_width="0dp"
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+            android:text="@string/address"
             android:textAllCaps="false"
-            android:textColor="#808080"
-            android:textSize="13sp"
-            android:fontFamily="@font/inter_medium"
-            android:layout_marginTop="@dimen/_9sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
+            android:textColor="#90A2AF"
+            android:textSize="16sp"
+            android:textFontWeight="400"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginStart="@dimen/_12sdp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"/>
 
            <LinearLayout
                android:id="@+id/layout_searchon_map"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
-               android:layout_marginTop="@dimen/_8sdp"
+               android:layout_marginTop="@dimen/_37sdp"
                android:gravity="center"
-               android:paddingVertical="@dimen/_8sdp"
+               android:paddingVertical="@dimen/_12sdp"
                android:layout_marginBottom="@dimen/_11sdp"
                app:layout_constraintBottom_toBottomOf="parent"
                android:background="@drawable/vej_nonvej_drawable"
                android:layout_marginHorizontal="@dimen/_9sdp"
-               app:layout_constraintTop_toBottomOf="@+id/txt_Lorem">
+               app:layout_constraintTop_toBottomOf="@+id/txt_address">
 
                <ImageView
                    android:layout_width="wrap_content"
@@ -521,153 +389,101 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <TextView
-        android:id="@+id/txt_Landmark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Landmark"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/layout_Address" />
 
     <EditText
-        android:id="@+id/edit_Chaurangilane"
+        android:id="@+id/tv_landmark"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="Ex. Chaurangilane North Ghonda (Optional)"
+        android:backgroundTint="#F7F8FA"
+        android:fontFamily="@font/inter"
+        android:hint="@string/landmark"
         android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textColorHint="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
+        android:textColor="#90A2AF"
+        android:textColorHint="#90A2AF"
+        android:textSize="16sp"
+        android:textFontWeight="400"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
         android:paddingVertical="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
         app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_Landmark" />
+        app:layout_constraintTop_toBottomOf="@id/layout_Address" />
 
 
 
-    <TextView
-        android:id="@+id/txt_Pincode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Pincode"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/edit_Chaurangilane" />
 
     <EditText
         android:id="@+id/edit_pincode"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="Ex. New Delhi"
-        android:textColorHint="#808080"
+        android:backgroundTint="#F7F8FA"
+        android:fontFamily="@font/inter"
+        android:hint="Pincode"
+        android:textColorHint="#90A2AF"
         android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
+        android:textColor="#90A2AF"
+        android:textSize="16sp"
+        android:textFontWeight="400"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
         android:paddingVertical="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
         app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_Pincode" />
+        app:layout_constraintTop_toBottomOf="@id/tv_landmark" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_state_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/edit_pincode"
+            app:layout_constraintEnd_toEndOf="@id/edit_pincode"
+            app:layout_constraintTop_toBottomOf="@+id/edit_pincode">
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/category"
+                android:layout_weight="1"
+                android:background="@drawable/category_drawable"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/category"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@drawable/category_drawable"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"/>
 
 
 
-    <TextView
-        android:id="@+id/txt_State"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="State"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pincode" />
 
-    <EditText
-        android:id="@+id/edit_State"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="Ex. New Delhi"
-        android:textColorHint="#808080"
-        android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_11sdp"
-        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
-        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_State" />
+        </LinearLayout>
 
-
-
-    <TextView
-        android:id="@+id/txt_City"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="City"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/edit_State" />
-
-    <EditText
-        android:id="@+id/edit_City"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:fontFamily="@font/inter_medium"
-        android:hint="Ex. New Delhi"
-        android:textColorHint="#808080"
-        android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_11sdp"
-        app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
-        app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_City" />
 
 
     <TextView
         android:id="@+id/txt_order_serving"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Order Serving Mode"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="400"
+        android:text="@string/order_serving_mode"
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/edit_City" />
+        android:textColor="#686868"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_pincode"
+        app:layout_constraintTop_toBottomOf="@+id/layout_state_city" />
 
 
     <LinearLayout
@@ -675,7 +491,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_select_category"
         app:layout_constraintStart_toStartOf="@+id/layout_select_category"
         app:layout_constraintTop_toBottomOf="@id/txt_order_serving">
@@ -686,14 +502,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/vej_nonvej_drawable"
-            android:text="Home Delivery"
+            android:text="@string/home_delivery"
             android:layout_weight="1"
-            android:textSize="12sp"
-            android:paddingVertical="@dimen/_12sdp"
-            android:textColor="#595959"
+            android:textSize="14sp"
+            android:textFontWeight="400"
+            android:textColor="#90A2AF"
             android:textAllCaps="false"
+            android:paddingVertical="@dimen/_12sdp"
             android:textAlignment="center"
-            android:fontFamily="@font/inter_bold"/>
+            android:fontFamily="@font/inter"/>
 
 
 
@@ -701,46 +518,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/vej_nonvej_drawable"
-            android:text="Take Away"
+            android:text="@string/take_away"
             android:layout_weight="1"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_marginStart="@dimen/_10sdp"
             android:paddingVertical="@dimen/_12sdp"
-            android:textColor="#595959"
+            android:textFontWeight="400"
+            android:textColor="#90A2AF"
             android:textAllCaps="false"
             android:textAlignment="center"
-            android:fontFamily="@font/inter_bold"/>
+            android:fontFamily="@font/inter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/vej_nonvej_drawable"
-            android:text="Dineout"
+            android:text="@string/dineout"
             android:layout_weight="1"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:layout_marginStart="@dimen/_10sdp"
             android:paddingVertical="@dimen/_12sdp"
-            android:textColor="#595959"
+            android:textFontWeight="400"
+            android:textColor="#90A2AF"
             android:textAllCaps="false"
             android:textAlignment="center"
-            android:fontFamily="@font/inter_bold"/>
+            android:fontFamily="@font/inter"/>
 
 
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/txt_about_shop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="About Shop"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/layout_order_serving" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -748,22 +555,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintEnd_toEndOf="@+id/edit_City"
-        app:layout_constraintStart_toStartOf="@+id/edit_City"
-        app:layout_constraintTop_toBottomOf="@id/txt_about_shop">
+        android:backgroundTint="#F7F8FA"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pincode"
+        app:layout_constraintStart_toStartOf="@+id/edit_pincode"
+        app:layout_constraintTop_toBottomOf="@id/layout_order_serving">
 
 
-        <TextView
-            android:id="@+id/txt_Describe"
+        <EditText
+            android:id="@+id/txt_about_shop"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Describe your shop in 100 words"
+            android:fontFamily="@font/inter"
+            android:hint="@string/about_shop"
+            android:background="#F7F8FA"
             android:textAllCaps="false"
-            android:textColor="#808080"
-            android:textSize="12sp"
+            android:textColor="#90A2AF"
+            android:textColorHint="#90A2AF"
+            android:textSize="16sp"
+            android:textFontWeight="400"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_12sdp"
             android:layout_marginEnd="@dimen/_17sdp"
@@ -775,14 +585,16 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:textSize="12sp"
-              android:textColor="#808080"
+              android:textColor="#686868"
               android:textAllCaps="false"
-              android:text="11/100"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter"
+              android:text="@string/_11_100"
               android:layout_marginBottom="@dimen/_8sdp"
               app:layout_constraintBottom_toBottomOf="parent"
-              android:layout_marginTop="@dimen/_19sdp"
+              android:layout_marginTop="@dimen/_30sdp"
               android:layout_marginEnd="@dimen/_9sdp"
-              app:layout_constraintTop_toBottomOf="@id/txt_Describe"
+              app:layout_constraintTop_toBottomOf="@id/txt_about_shop"
               app:layout_constraintEnd_toEndOf="parent"/>
 
 
@@ -792,168 +604,192 @@
 
 
 
-    <TextView
-        android:id="@+id/txt_Speciality"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_14sdp"
-        android:fontFamily="@font/inter_bold"
-        android:text="Speciality"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-        app:layout_constraintTop_toBottomOf="@+id/layout_describe" />
-
-
     <EditText
-        android:id="@+id/edit_kesar_salad"
+        android:id="@+id/edit_speciality"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/category_drawable"
-        android:backgroundTint="#F6F6F6"
+        android:backgroundTint="#F7F8FA"
         android:fontFamily="@font/inter_medium"
-        android:hint="Ex. Kesar salad"
-        android:textColorHint="#808080"
+        android:hint="@string/speciality"
+        android:textColorHint="#90A2AF"
         android:textAllCaps="false"
-        android:textColor="#808080"
-        android:textSize="12sp"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#90A2AF"
+        android:textSize="16sp"
+        android:textFontWeight="400"
+        android:layout_marginTop="@dimen/_12sdp"
         android:paddingStart="@dimen/_10sdp"
-        android:paddingVertical="@dimen/_11sdp"
+        android:paddingVertical="@dimen/_12sdp"
         app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
         app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
-        app:layout_constraintTop_toBottomOf="@id/txt_Speciality" />
+        app:layout_constraintTop_toBottomOf="@id/layout_describe" />
+
+
+        <Spinner
+            android:id="@+id/layout_select_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_speciality"
+            android:background="@drawable/category_drawable"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+        <EditText
+            android:id="@+id/edit_min_order_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_drawable"
+            android:backgroundTint="#F7F8FA"
+            android:fontFamily="@font/inter_medium"
+            android:hint="@string/min_order_value"
+            android:textColorHint="#90A2AF"
+            android:textAllCaps="false"
+            android:textColor="#90A2AF"
+            android:textSize="16sp"
+            android:textFontWeight="400"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+            app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+            app:layout_constraintTop_toBottomOf="@id/layout_select_offer" />
+
+
+        <EditText
+            android:id="@+id/edit_max_discount_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_drawable"
+            android:backgroundTint="#F7F8FA"
+            android:fontFamily="@font/inter_medium"
+            android:hint="@string/max_discount_amount"
+            android:textColorHint="#90A2AF"
+            android:textAllCaps="false"
+            android:textColor="#90A2AF"
+            android:textSize="16sp"
+            android:textFontWeight="400"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_Add_same"
+            app:layout_constraintStart_toStartOf="@+id/layout_Add_same"
+            app:layout_constraintTop_toBottomOf="@id/edit_min_order_value" />
 
 
 
         <TextView
-            android:id="@+id/txt_Add_photo"
+            android:id="@+id/tv_store_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_14sdp"
-            android:fontFamily="@font/inter_bold"
-            android:text="Add Photos"
+            android:text="@string/store_time"
+            android:textFontWeight="400"
+            android:textColor="#686868"
+            android:textSize="16sp"
             android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/edit_whatapp_number2"
-            app:layout_constraintTop_toBottomOf="@+id/edit_kesar_salad" />
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="@id/edit_max_discount_amount"
+            app:layout_constraintTop_toBottomOf="@+id/edit_max_discount_amount"/>
 
 
-        <LinearLayout
-            android:id="@+id/layout_add_photo1"
+        <RadioGroup
+            android:id="@+id/layout_radio_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/edit_kesar_salad"
-            app:layout_constraintStart_toStartOf="@+id/edit_kesar_salad"
-            app:layout_constraintTop_toBottomOf="@+id/txt_Add_photo">
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/edit_pincode"
+            app:layout_constraintEnd_toEndOf="@id/edit_pincode"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store_time">
 
 
-            <ImageView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
+                android:text="@string/fixed_time"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:checked="true"
                 android:layout_weight="1"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
+                android:textColor="#90A2AF"
+                android:textFontWeight="400"/>
 
-            <ImageView
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
+                android:text="@string/_24x7"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:checked="true"
                 android:layout_weight="1"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
-                android:layout_weight="1"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
+                android:textColor="#90A2AF"
+                android:textFontWeight="400"/>
 
 
-        </LinearLayout>
+        </RadioGroup>
 
 
-        <LinearLayout
-            android:id="@+id/layout_add_photo2"
-            android:layout_width="0dp"
+
+        <Spinner
+            android:id="@+id/spinner_Select_Open_Time"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
-            app:layout_constraintEnd_toEndOf="@+id/edit_kesar_salad"
-            app:layout_constraintStart_toStartOf="@+id/edit_kesar_salad"
-            app:layout_constraintTop_toBottomOf="@+id/layout_add_photo1">
+            android:entries="@array/category"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_radio_button"
+            android:background="@drawable/category_drawable"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"/>
 
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
-                android:layout_weight="1"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
-                android:layout_weight="1"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/circle_plus"
-                android:layout_weight="1"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:paddingVertical="@dimen/_35sdp"
-                android:background="@drawable/add_photo"/>
-
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/txt_Minimum"
-            android:layout_width="0dp"
+        <Spinner
+            android:id="@+id/spinner_Select_Closing_Time"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_7sdp"
-            android:fontFamily="@font/inter_medium"
-            android:text="Minimum 2 photos are required, under 2 mb/photo jpeg, png."
-            android:textAllCaps="false"
-            android:textColor="#808080"
-            android:textSize="12sp"
-            android:layout_marginEnd="@dimen/_15sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/layout_add_photo2"
-            app:layout_constraintTop_toBottomOf="@id/layout_add_photo2" />
+            android:entries="@array/category"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Select_Open_Time"
+            android:background="@drawable/category_drawable"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+        <Spinner
+            android:id="@+id/spinner_Select_Weekly_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Select_Closing_Time"
+            android:background="@drawable/category_drawable"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"/>
+
 
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_submit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/buttondegins"
             android:backgroundTint="#EF5B25"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:gravity="center"
             android:paddingVertical="@dimen/_13sdp"
             android:fontFamily="@font/inter_bold"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_Select_Weekly_Time"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="@dimen/_110sdp"
-            app:layout_constraintEnd_toEndOf="@+id/layout_add_photo2"
-            app:layout_constraintStart_toStartOf="@+id/layout_add_photo2"
-            app:layout_constraintTop_toBottomOf="@id/txt_Minimum" />
+            app:layout_constraintEnd_toEndOf="@+id/edit_pincode"
+            app:layout_constraintStart_toStartOf="@+id/edit_pincode" />
 
 
 

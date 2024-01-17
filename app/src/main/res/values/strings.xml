@@ -8,6 +8,32 @@
     <string name="select_a_category">Select a category</string>
     <string name="vej">  Vej  </string>
     <string name="allow">           Allow          </string>
+    <string name="precise_location">Precise Location</string>
+    <string name="handover_needs_certain_permissions_to_function_correctly">Handover needs certain permissions to function correctly</string>
+    <string name="notification_permission">Notification Permission</string>
+    <string name="handover_uses_your_precise_location_to_identify_near_by_serviceable_areas_and_delivery_partners_avalibility">Handover uses your precise location to identify near by serviceable areas and delivery partners avalibility.</string>
+    <string name="add_same_details_as_previous">Add same details as previous</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="whatsaap_number">Whatsaap number</string>
+    <string name="mark_same_as_mobile_no">Mark same as mobile no.</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="order_serving_mode">Order Serving Mode</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="take_away">Take Away</string>
+    <string name="dineout">Dineout</string>
+    <string name="about_shop">About Shop</string>
+    <string name="_11_100">11/100</string>
+    <string name="speciality">Speciality</string>
+    <string name="min_order_value">Min Order Value</string>
+    <string name="max_discount_amount">Max. Discount Amount</string>
+    <string name="store_time">Store Time</string>
+    <string name="fixed_time">Fixed Time</string>
+    <string name="_24x7">24X7</string>
+    <string name="submit">Submit</string>
+    <string name="add_store_details">Add Store Details</string>
+    <string name="food_type">Food Type</string>
+    <string name="upload_picture">Upload Picture</string>
 
 
     <string-array name="category">
