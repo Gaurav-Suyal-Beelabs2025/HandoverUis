@@ -34,6 +34,7 @@
     <string name="add_store_details">Add Store Details</string>
     <string name="food_type">Food Type</string>
     <string name="upload_picture">Upload Picture</string>
+    <string name="location_permission">Location Permission</string>
 
 
     <string-array name="category">

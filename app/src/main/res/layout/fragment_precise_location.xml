@@ -62,7 +62,7 @@
           android:id="@+id/txt_Location_Permission"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Location Permission"
+          android:text="@string/location_permission"
           android:textSize="18sp"
           android:textColor="@color/black"
           android:textAllCaps="false"
