@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_150sdp"
+          android:background="@drawable/bottomsheet_drawable"
+          app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_are_you_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_sure_you_want_to_cancel_the_order"
+                android:textAllCaps="false"
+                android:textFontWeight="600"
+                android:textSize="24sp"
+                android:textColor="#262626"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+             <TextView
+                 android:id="@+id/tv_if_you_cancel"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/if_you_cancel_the_order_you_have_do_it_again_and_this_order_could_not_be_recover"
+                 android:textColor="#686868"
+                 android:textSize="16sp"
+                 android:textFontWeight="400"
+                 android:textAllCaps="false"
+                 android:fontFamily="@font/inter_regular"
+                 android:layout_marginEnd="@dimen/_23sdp"
+                 android:layout_marginTop="@dimen/_8sdp"
+                 app:layout_constraintTop_toBottomOf="@id/tv_are_you_sure"
+                 app:layout_constraintStart_toStartOf="@id/tv_are_you_sure"
+                 app:layout_constraintEnd_toEndOf="parent"/>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+             </LinearLayout>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

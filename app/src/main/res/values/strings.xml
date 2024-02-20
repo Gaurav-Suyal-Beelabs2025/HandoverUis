@@ -106,6 +106,34 @@
     <string name="_4_km">₹4/km</string>
     <string name="Items_Categorys">Carriage Type<font color="#000000"><b>       Open</b></font></string>
     <string name="loading_capacity">Loading Capacity<font color="#000000"><b>   400 KG</b></font></string>
-    <string name="delevery_charge"><font color="#FFFFFF">Delivery Charger: </font><font color="#FFFFFF"><b> \n₹580    </b></font> <font color="#000000"><b>    Details</b></font></string>
+    <string name="delevery_charge"><font color="#686868">Delivery Charger</font><font color="#262626"><b> \n₹5780  </b></font> <font color="#0F6FB5">  Details </font></string>
+    <string name="piaggio_bajaj_ace">Piaggio | Bajaj | Ace</string>
+    <string name="max_range_50_km">Max Range 50 Km</string>
+    <string name="carriage_type_open"><font color="#686868">Carriage Type</font><font color="#262626"><b> Open</b></font></string>
+    <string name="loading_capacity_400_kg"><font color="#686868">Loading Capacity</font><font color="#262626"><b> 400 KG</b></font></string>
+    <string name="_7_ft_loader">7 ft. Loader</string>
+    <string name="_8l_x_6w_x_6h">8L X 6W X 6H</string>
+    <string name="are_you_sure_you_want_to_cancel_the_order">Are you Sure you want to cancel the order?</string>
+    <string name="if_you_cancel_the_order_you_have_do_it_again_and_this_order_could_not_be_recover">If you cancel the order, you have do it again and this order could not be recover.</string>
+    <string name="call_ride">Call Rider</string>
+    <string name="call_customer">Call Customer</string>
+
+    <string-array name="month">
+
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+        <item>jan</item>
+
+
+
+    </string-array>
+
+
+
 
 </resources>

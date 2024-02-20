@@ -5,11 +5,14 @@
 
     <data>
 
+       
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#F7F8FA"
         tools:context=".Fragment.Location_Fragment">
 
 
@@ -25,8 +28,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="@dimen/_200sdp">
+                    app:layout_constraintTop_toTopOf="parent">
 
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,7 +37,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_13sdp"
                         android:paddingVertical="@dimen/_12sdp"
-                        android:backgroundTint="#F8F8F8"
+                        android:backgroundTint="@color/white"
                         android:background="@drawable/search_view_drawable"
                         android:layout_marginHorizontal="@dimen/_15sdp"
                         app:layout_constraintTop_toTopOf="parent">
@@ -44,47 +46,30 @@
                             android:id="@+id/edit_search_view"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_12sdp"
                             android:background="#F8F8F8"
-                            android:fontFamily="@font/inter_semibold"
+                            android:fontFamily="@font/inter_regular"
                             android:hint="@string/Search_in_your_neighbourhood"
                             android:singleLine="true"
-                            android:layout_marginEnd="@dimen/_5sdp"
-                            android:textColorHint="#8B8B8B"
                             android:textColor="#8B8B8B"
-                            android:textSize="12sp"
+                            android:textColorHint="#8B8B8B"
+                            android:textFontWeight="400"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            app:layout_constraintStart_toEndOf="@id/img_search_view"
+                            android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/img_search_view"
-                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
 
                         <ImageView
                             android:id="@+id/img_search_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_37sdp"
+                            app:tint="#90A2AF"
                             android:src="@drawable/img_search_view"
+                            android:layout_marginStart="@dimen/_10sdp"
                             app:layout_constraintBottom_toBottomOf="@+id/edit_search_view"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="@id/edit_search_view" />
-
-                        <View
-                            android:id="@+id/view_search"
-                            android:layout_width="1dp"
-                            android:layout_height="0dp"
-                            android:background="#D9D9D9"
-                            android:layout_marginStart="@dimen/_7sdp"
-                            app:layout_constraintTop_toTopOf="@id/img_search_view"
-                            app:layout_constraintStart_toEndOf="@id/img_search_view"
-                            app:layout_constraintBottom_toBottomOf="@id/img_search_view" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/img_voice_search"
-                            app:layout_constraintStart_toEndOf="@id/view_search"
-                            app:layout_constraintTop_toTopOf="@id/view_search"
-                            android:layout_marginStart="@dimen/_8sdp" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -164,6 +149,7 @@
                         android:layout_height="wrap_content"
                         android:scrollbars="vertical"
                         android:orientation="vertical"
+                        tools:itemCount="2"
                         android:layout_marginTop="@dimen/_10sdp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         android:layout_marginBottom="@dimen/_100sdp"

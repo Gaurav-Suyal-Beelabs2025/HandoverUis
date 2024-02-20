@@ -18,38 +18,51 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:background="@color/white"
+            android:background="@drawable/bottomsheet_drawable"
             app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+            <ImageView
+                android:id="@+id/img_ramesh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pkkk"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rajeev\nRanjan"
-                android:textSize="12sp"
+                android:text="Rajeev Ranjan"
+                android:textSize="16sp"
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/_23sdp"
+                android:textFontWeight="500"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="@dimen/_20sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:fontFamily="@font/inter_bold" />
+                app:layout_constraintStart_toEndOf="@+id/img_ramesh"
+                android:layout_marginStart="@dimen/_9sdp"
+                app:layout_constraintTop_toTopOf="@+id/img_ramesh"
+                android:fontFamily="@font/inter_medium" />
 
             <TextView
                 android:id="@+id/txt_our_rider"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_25sdp"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
-                android:fontFamily="@font/inter_medium"
+                android:fontFamily="@font/inter_regular"
                 android:text="@string/our_rider_is_on_the_way_and_reaching_your_shop_to_pick_up_the_order"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="12sp"
+                android:textSize="14sp"
+                android:textFontWeight="400"
+                app:layout_constraintStart_toStartOf="@+id/txt_name"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/txt_name"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/txt_name" />
 
 
             <RatingBar
@@ -58,12 +71,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_2sdp"
                 android:rating="4"
                 android:stepSize="1"
-                app:layout_constraintEnd_toEndOf="@+id/txt_name"
-                app:layout_constraintStart_toStartOf="@+id/txt_name"
-                app:layout_constraintTop_toBottomOf="@id/txt_name" />
+                app:layout_constraintStart_toStartOf="@+id/img_ramesh"
+                app:layout_constraintTop_toBottomOf="@+id/img_ramesh" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,33 +82,34 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_7sdp"
-                android:paddingVertical="@dimen/_5sdp"
                 android:background="@drawable/timline_drwble"
+                android:paddingVertical="@dimen/_8sdp"
                 app:layout_constraintEnd_toEndOf="@id/txt_our_rider"
-                app:layout_constraintTop_toBottomOf="@id/txt_our_rider"
-                app:layout_constraintStart_toStartOf="@id/txt_our_rider">
+                app:layout_constraintStart_toStartOf="@+id/img_ramesh"
+                app:layout_constraintTop_toBottomOf="@id/userRating">
 
 
                 <ImageView
                     android:id="@+id/img_irror"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/group_33751"
                     android:layout_marginStart="@dimen/_7sdp"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/group_33751"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_medium"
+                    android:fontFamily="@font/inter_regular"
                     android:text="@string/orders_will_be_serve_d_as_the_timeline"
                     android:textAllCaps="false"
-                    android:textColor="#696969"
-                    android:textSize="12sp"
+                    android:textColor="#686868"
+                    android:textSize="14sp"
+                    android:textFontWeight="400"
                     app:layout_constraintBottom_toBottomOf="@id/img_irror"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/img_irror"
@@ -114,33 +126,24 @@
                 android:layout_marginTop="@dimen/_12sdp"
                 app:layout_constraintTop_toBottomOf="@id/layout_order_timeline" />
 
-            <TextView
-                android:id="@+id/txt_temporary_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/temporary_home"
-                android:textSize="14sp"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:fontFamily="@font/inter_bold"
-                android:layout_marginTop="@dimen/_11sdp"
-                android:layout_marginStart="@dimen/_20sdp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view1" />
 
 
-            <TextView
-                android:id="@+id/txt_Address"
-                android:layout_width="wrap_content"
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_temporary"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textAllCaps="false"
-                android:textSize="12sp"
-                android:text="@string/j_121_second_floor_block_j_rajouri_garden_new_delhi"
-                android:fontFamily="@font/inter_medium"
-                android:layout_marginTop="@dimen/_5sdp"
-                app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
-                app:layout_constraintTop_toBottomOf="@id/txt_temporary_home" />
+                android:orientation="vertical"
+                tools:itemCount="4"
+                android:scrollbars="vertical"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/temporary_addres"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/temporary_home_list"
+                app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+
 
             <View
                 android:id="@+id/view2"
@@ -148,7 +151,11 @@
                 android:layout_height="1dp"
                 android:background="#EAEAEA"
                 android:layout_marginTop="@dimen/_19sdp"
-                app:layout_constraintTop_toBottomOf="@id/txt_Address" />
+                app:layout_constraintTop_toBottomOf="@id/recycler_temporary" />
+
+
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -161,48 +168,75 @@
                 app:layout_constraintTop_toBottomOf="@id/view2">
 
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="     Call Rider    "
-                    android:textSize="14sp"
-                    android:textAllCaps="false"
-                    android:paddingVertical="@dimen/_10sdp"
-                    android:textColor="@color/white"
+                    android:orientation="horizontal"
                     android:gravity="center"
-                    android:background="@drawable/call_rider_drwble"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/inter_bold" />
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:background="@drawable/call_rider_drawable"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_rider"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Call Customer"
-                    android:textSize="14sp"
-                    android:paddingVertical="@dimen/_10sdp"
-                    android:backgroundTint="#CFEBFF"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:background="@drawable/call_rider_drwble"
+                    android:text="@string/call_ride"
+                    android:textSize="16sp"
                     android:textAllCaps="false"
-                    android:textColor="#0F6FB5"
+                    android:textColor="#262626"
+                    android:layout_marginStart="@dimen/_6sdp"
                     android:gravity="center"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/inter_semibold" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:backgroundTint="#FA713F"
                     android:layout_weight="1"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/call_rider_drawable">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/white"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:src="@drawable/call_rider"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call_customer"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:gravity="center"
                     android:fontFamily="@font/inter_bold" />
+
+                </LinearLayout>
 
 
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/img_ramesh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pkkk"
-            android:layout_marginStart="@dimen/_15sdp"
-            app:layout_constraintBottom_toTopOf="@+id/layout_image"
-            app:layout_constraintStart_toStartOf="@+id/layout_image"
-            app:layout_constraintTop_toTopOf="@+id/layout_image" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

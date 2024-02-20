@@ -2,112 +2,32 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
-    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layout_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:backgroundTint="#F6F6F6"
-                android:layout_marginTop="@dimen/_40sdp"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                android:paddingVertical="@dimen/_10sdp"
-                android:background="@drawable/wheeler_background">
-
-                <TextView
-                    android:id="@+id/txt_category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_12sdp"
-                    android:fontFamily="@font/inter_semibold"
-                    android:text="@string/category"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/bottomsheet_drawable">
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#FA713F"
-                    android:textSize="12sp"
-                    android:textAllCaps="false"
-                    android:text="@string/food"
-                    android:layout_marginEnd="@dimen/_11sdp"
-                    app:layout_constraintTop_toTopOf="@id/txt_category"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:fontFamily="@font/inter_semibold" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layout_Total_Weight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/layout_category"
-                android:backgroundTint="#F6F6F6"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                android:paddingVertical="@dimen/_10sdp"
-                android:background="@drawable/wheeler_background">
-
-                <TextView
-                    android:id="@+id/txt_total_weight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/total_weight"
-                    android:textColor="@color/black"
-                    android:textAllCaps="false"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/inter_semibold"
-                    android:layout_marginStart="@dimen/_12sdp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#FA713F"
-                    android:textSize="12sp"
-                    android:textAllCaps="false"
-                    android:text="@string/weight"
-                    android:layout_marginEnd="@dimen/_11sdp"
-                    app:layout_constraintTop_toTopOf="@id/txt_total_weight"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:fontFamily="@font/inter_semibold" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout_2_Wheeler"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/wheeler_background"
-                app:layout_constraintEnd_toEndOf="@id/layout_Total_Weight"
-                app:layout_constraintStart_toStartOf="@id/layout_Total_Weight"
-                app:layout_constraintTop_toBottomOf="@id/layout_Total_Weight">
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                 app:layout_constraintTop_toTopOf="parent">
 
 
                 <ImageView
@@ -129,22 +49,24 @@
                     android:fontFamily="@font/inter_semibold"
                     android:text="8 ft. Loader"
                     android:textAllCaps="false"
+                    android:textFontWeight="600"
                     android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toEndOf="@+id/img_scooter"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/tv_piaggio_bajaj_ace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_medium"
-                    android:text="Piaggio | Bajaj | Ace"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/piaggio_bajaj_ace"
                     android:textColor="#686868"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_2_wheeler"
-                    app:layout_constraintStart_toEndOf="@+id/txt_2_wheeler"
-                    app:layout_constraintTop_toTopOf="@+id/txt_2_wheeler" />
+                    android:textSize="14sp"
+                    android:textFontWeight="400"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_2_wheeler"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2_wheeler" />
 
                 <TextView
                     android:id="@+id/txt_max_weight"
@@ -155,40 +77,13 @@
                     android:fontFamily="@font/inter_regular"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="Max Range 50 Km"
+                    android:text="@string/max_range_50_km"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
+                    android:textFontWeight="400"
+                    android:textColor="#0F6FB5"
+                    android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="@+id/txt_2_wheeler"
-                    app:layout_constraintTop_toBottomOf="@id/txt_2_wheeler" />
-
-
-                <TextView
-                    android:id="@+id/txt_max_volume"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/inter_regular"
-                    android:text="@string/Items_Category"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintEnd_toEndOf="@+id/txt_max_weight"
-                    app:layout_constraintStart_toStartOf="@+id/txt_2_wheeler"
-                    app:layout_constraintTop_toBottomOf="@id/txt_max_weight" />
-
-                <TextView
-                    android:id="@+id/loading_catogary"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_2sdp"
-                    android:text="@string/loading_capacity"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_8sdp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_max_weight"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_max_volume" />
+                    app:layout_constraintTop_toBottomOf="@id/tv_piaggio_bajaj_ace" />
 
                 <TextView
                     android:id="@+id/txt_rupees250"
@@ -196,34 +91,95 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:background="@drawable/max_ran_drwable"
-                    android:backgroundTint="#CCFDC4"
-                    android:fontFamily="@font/inter_bold"
+                    android:backgroundTint="#E3FBE3"
+                    android:fontFamily="@font/inter_regular"
+                    android:textFontWeight="400"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="8L X 6W X 6H₹"
+                    android:text="8L X 6W X 6H"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
+                    android:textColor="#4A9449"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txt_max_weight"
                     app:layout_constraintStart_toEndOf="@+id/txt_max_weight"
                     app:layout_constraintTop_toTopOf="@+id/txt_max_weight" />
 
 
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/loading_capacity"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_max_weight">
+
+
+                     <View
+                         android:id="@+id/view_open"
+                         android:layout_width="1dp"
+                         android:layout_height="0dp"
+                         android:background="#EAEBEE"
+                         android:layout_marginEnd="@dimen/_10sdp"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintTop_toTopOf="parent"
+                         app:layout_constraintBottom_toBottomOf="parent"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/carriage_type_open"
+                       android:textFontWeight="400"
+                       android:textSize="13sp"
+                       android:fontFamily="@font/inter_regular"
+                       android:layout_marginVertical="@dimen/_7sdp"
+                       android:layout_marginStart="@dimen/_8sdp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_capacity_400_kg"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/inter_regular"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/view_open"/>
+
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layout_3_Wheeler"
-                android:layout_width="0dp"
+                android:id="@+id/layout_7ft_loader"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/wheeler_background"
-                app:layout_constraintEnd_toEndOf="@id/layout_Total_Weight"
-                app:layout_constraintStart_toStartOf="@id/layout_Total_Weight"
+                android:layout_marginHorizontal="@dimen/_12sdp"
                 app:layout_constraintTop_toBottomOf="@id/layout_2_Wheeler">
 
 
                 <ImageView
-                    android:id="@+id/img_3wheeler"
+                    android:id="@+id/img_pickup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_11sdp"
@@ -233,35 +189,35 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/txt_3_wheeler"
+                    android:id="@+id/txt_2_7_ft_loader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_22sdp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="7 ft. Loader"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="@string/_7_ft_loader"
                     android:textAllCaps="false"
-                    android:layout_marginTop="@dimen/_11sdp"
+                    android:textFontWeight="600"
                     android:textColor="#000000"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toEndOf="@+id/img_3wheeler"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_pickup"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
                 <TextView
-                    android:id="@+id/piggio_twc"
+                    android:id="@+id/tv_piaggio_bajaj_ace1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_medium"
-                    android:text="Piaggio | Bajaj | Ace"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/piaggio_bajaj_ace"
                     android:textColor="#686868"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_3_wheeler"
-                    app:layout_constraintStart_toEndOf="@+id/txt_3_wheeler"
-                    app:layout_constraintTop_toTopOf="@+id/txt_3_wheeler" />
+                    android:textSize="14sp"
+                    android:textFontWeight="400"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_2_7_ft_loader"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2_7_ft_loader" />
 
                 <TextView
-                    android:id="@+id/txt_max_weight3"
+                    android:id="@+id/txt_max_weight1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -269,76 +225,109 @@
                     android:fontFamily="@font/inter_regular"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="Max. Weight 15 Kg"
+                    android:text="@string/max_range_50_km"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_3_wheeler"
-                    app:layout_constraintTop_toBottomOf="@id/txt_3_wheeler" />
+                    android:textFontWeight="400"
+                    android:textColor="#0F6FB5"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2_7_ft_loader"
+                    app:layout_constraintTop_toBottomOf="@id/tv_piaggio_bajaj_ace1" />
 
                 <TextView
-                    android:id="@+id/txt_8L_X_6W_X_6H"
+                    android:id="@+id/txt_8l_x_6w_x_6h"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:background="@drawable/max_ran_drwable"
-                    android:backgroundTint="#CCFDC4"
-                    android:fontFamily="@font/inter_bold"
+                    android:backgroundTint="#E3FBE3"
+                    android:fontFamily="@font/inter_regular"
+                    android:textFontWeight="400"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="8L X 6W X 6H₹"
+                    android:text="@string/_8l_x_6w_x_6h"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_max_weight3"
-                    app:layout_constraintStart_toEndOf="@+id/txt_max_weight3"
-                    app:layout_constraintTop_toTopOf="@+id/txt_max_weight3" />
+                    android:textColor="#4A9449"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_max_weight1"
+                    app:layout_constraintStart_toEndOf="@+id/txt_max_weight1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_max_weight1" />
 
-                <TextView
-                    android:id="@+id/txt_max_volume3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_regular"
-                    android:text="@string/Items_Category"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_3_wheeler"
-                    app:layout_constraintTop_toBottomOf="@id/txt_max_weight3" />
 
-                <TextView
-                    android:id="@+id/loading_category_two"
-                    android:layout_width="wrap_content"
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:text="@string/loading_capacity"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_3_wheeler"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_max_volume3" />
+                    android:background="@drawable/loading_capacity"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_max_weight1">
+
+
+                    <View
+                        android:id="@+id/view_open1"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EAEBEE"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carriage_type_open"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_capacity_400_kg"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/view_open1"/>
+
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/layout_3_Wheeler_xl"
-                android:layout_width="0dp"
+                android:id="@+id/layout_4_wheeler"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/wheeler_background"
-                app:layout_constraintEnd_toEndOf="@id/layout_Total_Weight"
-                app:layout_constraintStart_toStartOf="@id/layout_Total_Weight"
-                app:layout_constraintTop_toBottomOf="@+id/layout_3_Wheeler">
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/layout_7ft_loader">
 
 
                 <ImageView
-                    android:id="@+id/img_3wheeler_xl"
+                    android:id="@+id/img_scooty_twowher"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="@dimen/_15sdp"
                     android:layout_marginStart="@dimen/_11sdp"
                     android:src="@drawable/scooty_twowhe"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -346,35 +335,35 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/txt_3_wheeler_xl"
+                    android:id="@+id/txt_4_wheeler"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_35sdp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="4 Wheeler"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="@string/_4_wheeler"
                     android:textAllCaps="false"
+                    android:textFontWeight="600"
                     android:textColor="#000000"
-                    android:textSize="16sp"
-                    android:layout_marginTop="@dimen/_11sdp"
-                    app:layout_constraintStart_toEndOf="@+id/img_3wheeler_xl"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_scooty_twowher"
                     app:layout_constraintTop_toTopOf="parent" />
 
-
                 <TextView
-                    android:id="@+id/piggio_three"
+                    android:id="@+id/tv_piaggio_bajaj_ace2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_medium"
-                    android:text="Piaggio | Bajaj | Ace"
+                    android:fontFamily="@font/inter_regular"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/piaggio_bajaj_ace"
                     android:textColor="#686868"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_3_wheeler_xl"
-                    app:layout_constraintStart_toEndOf="@+id/txt_3_wheeler_xl"
-                    app:layout_constraintTop_toTopOf="@+id/txt_3_wheeler_xl" />
+                    android:textSize="14sp"
+                    android:textFontWeight="400"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_4_wheeler"
+                    app:layout_constraintStart_toStartOf="@+id/txt_4_wheeler" />
 
                 <TextView
-                    android:id="@+id/txt_max_weightxl"
+                    android:id="@+id/txt_max_weight2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
@@ -382,73 +371,107 @@
                     android:fontFamily="@font/inter_regular"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="Max Range 50 Km"
+                    android:text="@string/max_range_50_km"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_3_wheeler_xl"
-                    app:layout_constraintTop_toBottomOf="@id/txt_3_wheeler_xl" />
-
+                    android:textFontWeight="400"
+                    android:textColor="#0F6FB5"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_4_wheeler"
+                    app:layout_constraintTop_toBottomOf="@id/tv_piaggio_bajaj_ace2" />
 
                 <TextView
-                    android:id="@+id/txt_8L_X_6W_X_6H_two"
+                    android:id="@+id/txt_8l_x_6w_x_6h1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:background="@drawable/max_ran_drwable"
-                    android:backgroundTint="#CCFDC4"
-                    android:fontFamily="@font/inter_bold"
+                    android:backgroundTint="#E3FBE3"
+                    android:fontFamily="@font/inter_regular"
+                    android:textFontWeight="400"
                     android:paddingHorizontal="@dimen/_5sdp"
                     android:paddingVertical="@dimen/_3sdp"
-                    android:text="8L X 6W X 6H₹"
+                    android:text="@string/_8l_x_6w_x_6h"
                     android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_max_weightxl"
-                    app:layout_constraintStart_toEndOf="@+id/txt_max_weightxl"
-                    app:layout_constraintTop_toTopOf="@+id/txt_max_weightxl"
-                    app:layout_constraintVertical_bias="1.0" />
+                    android:textColor="#4A9449"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_max_weight2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_max_weight2"
+                    app:layout_constraintTop_toTopOf="@+id/txt_max_weight2" />
 
-                <TextView
-                    android:id="@+id/txt_max_volume4"
-                    android:layout_width="0dp"
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:fontFamily="@font/inter_regular"
-                    android:text="@string/Items_Category"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="8sp"
-                    app:layout_constraintStart_toStartOf="@+id/txt_max_weightxl"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_max_weightxl" />
-
-
-                <TextView
-                    android:id="@+id/loading_category_three"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:text="@string/loading_capacity"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/txt_max_volume4"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_max_volume4" />
+                    android:background="@drawable/loading_capacity"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_max_weight2">
+
+
+                    <View
+                        android:id="@+id/view_open2"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:background="#EAEBEE"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carriage_type_open"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_capacity_400_kg"
+                        android:textFontWeight="400"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/view_open2"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
 
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EAEBEE"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintTop_toBottomOf="@id/layout_4_wheeler"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_charge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                android:layout_marginTop="44dp"
                 android:padding="@dimen/_12sdp"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:background="@drawable/delivery_chaarge_drwble"
+                android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layout_3_Wheeler_xl">
+                app:layout_constraintTop_toBottomOf="@+id/view">
 
 
                 <TextView
@@ -456,7 +479,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/delevery_charge"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
+                    android:textFontWeight="600"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -465,11 +491,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Confirm"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:fontFamily="@font/inter_semibold"
                     android:background="@drawable/conform_dwrable"
-                    android:paddingVertical="@dimen/_5sdp"
-                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="#FF662E"
+                    android:paddingVertical="@dimen/_15sdp"
+                    android:paddingHorizontal="@dimen/_40sdp"
                     android:layout_marginEnd="@dimen/_11sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
