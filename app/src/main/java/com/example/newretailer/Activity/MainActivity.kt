@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
                         if (destination.id == R.id.location_Fragment) {
                             bottomNavigationView.visibility = View.GONE
 
+
+
                     } else {
 
                         bottomNavigationView.visibility = View.VISIBLE

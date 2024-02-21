@@ -18,31 +18,17 @@
 
 
             <ImageView
-                android:id="@+id/img_location"
+                android:id="@+id/icon_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp"
-                android:backgroundTint="#F2F2F2"
-                android:background="@drawable/scooter_drawable"
-                app:layout_constraintEnd_toEndOf="@id/txt_km"
-                app:layout_constraintStart_toStartOf="@id/txt_km"
-                app:layout_constraintTop_toTopOf="@id/txt_temporary_home"
-                android:src="@drawable/location_black" />
-
-
-            <TextView
-                android:id="@+id/txt_km"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:textSize="12sp"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:textColor="@color/black"
-                android:text="@string/_12_kms"
+                android:layout_marginStart="@dimen/_12sdp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="@dimen/_15sdp"
-                app:layout_constraintTop_toBottomOf="@id/img_location" />
+                app:layout_constraintTop_toTopOf="@id/txt_temporary_home"
+                android:src="@drawable/icon_home" />
+
+
+
 
 
             <TextView
@@ -50,13 +36,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/temporary_home"
-                android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textColor="#262626"
+                android:textSize="16sp"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:textAllCaps="false"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/inter_medium"
-                app:layout_constraintStart_toEndOf="@id/txt_km"
+                app:layout_constraintStart_toEndOf="@id/icon_home"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -64,12 +50,13 @@
                 android:id="@+id/txt_Address"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_medium"
+                android:fontFamily="@font/inter_regular"
                 android:text="@string/j_121_second_floor_block_j_rajouri_garden_new_delhi"
                 android:textAllCaps="false"
                 android:layout_marginEnd="@dimen/_15sdp"
-                android:textColor="#8B8B8B"
-                android:textSize="12sp"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
                 app:layout_constraintTop_toBottomOf="@id/txt_temporary_home" />

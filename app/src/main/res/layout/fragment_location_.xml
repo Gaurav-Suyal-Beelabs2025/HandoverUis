@@ -17,8 +17,12 @@
 
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/llnestedlayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="0dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -31,6 +35,32 @@
                     app:layout_constraintTop_toTopOf="parent">
 
 
+                    <TextView
+                        android:id="@+id/tv_select_a_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_a_location"
+                        android:textFontWeight="700"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/inter_bold"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_down_black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        app:layout_constraintTop_toTopOf="@id/tv_select_a_location"
+                        app:layout_constraintStart_toEndOf="@id/tv_select_a_location"/>
+
+
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/layout_search_view"
                         android:layout_width="match_parent"
@@ -39,24 +69,26 @@
                         android:paddingVertical="@dimen/_12sdp"
                         android:backgroundTint="@color/white"
                         android:background="@drawable/search_view_drawable"
-                        android:layout_marginHorizontal="@dimen/_15sdp"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_select_a_location">
 
                         <EditText
                             android:id="@+id/edit_search_view"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:background="#F8F8F8"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@color/white"
                             android:fontFamily="@font/inter_regular"
                             android:hint="@string/Search_in_your_neighbourhood"
                             android:singleLine="true"
                             android:textColor="#8B8B8B"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:textColorHint="#8B8B8B"
                             android:textFontWeight="400"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            app:layout_constraintStart_toEndOf="@id/img_search_view"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/img_search_view"
                             app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -73,60 +105,180 @@
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_current_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/search_view_drawable"
+                app:layout_constraintTop_toBottomOf="@id/layout_search_view">
+
+
+                <ImageView
+                    android:id="@+id/ic_current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_current_location"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/tv_your_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_your_current_location"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="#262626"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/inter_semibold"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="@id/ic_current_location"
+                    app:layout_constraintStart_toEndOf="@id/ic_current_location"/>
+
+
+                <TextView
+                    android:id="@+id/tv_adress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="@string/b_154_noida_63_noida_201301"
+                    android:textAllCaps="false"
+                    android:textColor="#686868"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="@id/tv_your_current"
+                    app:layout_constraintTop_toBottomOf="@id/tv_your_current" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_adress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_your_current" />
+
+
+                   <View
+                       android:id="@+id/view_current_location"
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#EAEBEE"
+                       android:layout_marginTop="@dimen/_15sdp"
+                       app:layout_constraintTop_toBottomOf="@id/tv_adress"/>
+
+
+                  <LinearLayout
+                      android:id="@+id/layout_add_address"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/_12sdp"
+                      android:padding="@dimen/_5sdp"
+                      android:layout_marginBottom="@dimen/_12sdp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/view_current_location">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:src="@drawable/ic_plus"/>
+
+                      <TextView
+                          android:id="@+id/tv_add_address"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/add_address"
+                          android:textAllCaps="false"
+                          android:textSize="16sp"
+                          android:textColor="#EF5B25"
+                          android:textFontWeight="600"
+                          android:fontFamily="@font/inter_semibold"/>
+
+
+
+
+                  </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                     <TextView
                         android:id="@+id/txt_saved_addresses"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_19sdp"
-                        android:fontFamily="@font/inter_medium"
+                        android:fontFamily="@font/inter_semibold"
                         android:text="@string/saved_addresses"
                         android:textColor="@color/black"
+                        android:textFontWeight="600"
                         android:textAllCaps="false"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/layout_search_view" />
+                        app:layout_constraintTop_toBottomOf="@id/layout_current_location" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recycler_Address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/search_view_drawable"
                         app:layout_constraintTop_toBottomOf="@+id/txt_saved_addresses"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         android:scrollbars="vertical"
+                        app:spanCount="3"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
                         tools:itemCount="1"
                         tools:listitem="@layout/saved_itamlist"
                         android:orientation="vertical"
                         android:layout_marginTop="@dimen/_15sdp" />
 
 
-                    <LinearLayout
-                        android:id="@+id/layout_see_more"
+                    <TextView
+                        android:id="@+id/tv_nearby_stores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nearby_stores"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textColor="#262626"
+                        android:textFontWeight="600"
+                        android:fontFamily="@font/inter_semibold"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/recycler_Address"
+                        app:layout_constraintTop_toBottomOf="@+id/recycler_Address"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_nearby_stores"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:layout_marginTop="@dimen/_12sdp"
-                        android:layout_marginHorizontal="@dimen/_15sdp"
-                        android:paddingVertical="@dimen/_5sdp"
-                        android:background="@drawable/see_more_drawable"
-                        app:layout_constraintTop_toBottomOf="@id/recycler_Address">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:textSize="12sp"
-                            android:fontFamily="@font/inter_medium"
-                            android:textColor="@color/black"
-                            android:text="See More" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/arrow_down_black" />
-
-
-                    </LinearLayout>
+                        android:background="@drawable/search_view_drawable"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/nearby_store_itamlist"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_nearby_stores"/>
 
 
                     <TextView
@@ -137,8 +289,8 @@
                         android:textAllCaps="false"
                         android:text="@string/recent_locations"
                         android:layout_marginTop="@dimen/_20sdp"
-                        app:layout_constraintStart_toStartOf="@id/layout_see_more"
-                        app:layout_constraintTop_toBottomOf="@id/layout_see_more"
+                        app:layout_constraintStart_toStartOf="@id/recycler_Address"
+                        app:layout_constraintTop_toBottomOf="@id/recycler_nearby_stores"
                         android:fontFamily="@font/inter_bold"
                         android:textSize="16sp" />
 
@@ -147,15 +299,16 @@
                         android:id="@+id/recycler_location"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:scrollbars="vertical"
-                        android:orientation="vertical"
-                        tools:itemCount="2"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
                         android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/search_view_drawable"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:layout_marginBottom="@dimen/_100sdp"
-                        tools:listitem="@layout/recent_itamlist"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        app:layout_constraintTop_toBottomOf="@id/txt_recent_locations" />
+                        app:layout_constraintTop_toBottomOf="@id/txt_recent_locations"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        tools:listitem="@layout/recent_itamlist" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -167,30 +320,6 @@
         </androidx.core.widget.NestedScrollView>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/layout_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:paddingVertical="@dimen/_15sdp"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#EF5B25"
-                android:text="@string/confirm"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:paddingVertical="@dimen/_12sdp"
-                android:textAllCaps="false"
-                android:fontFamily="@font/inter_medium"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:background="@drawable/orange_button_background" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

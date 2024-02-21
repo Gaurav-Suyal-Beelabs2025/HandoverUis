@@ -117,6 +117,14 @@
     <string name="if_you_cancel_the_order_you_have_do_it_again_and_this_order_could_not_be_recover">If you cancel the order, you have do it again and this order could not be recover.</string>
     <string name="call_ride">Call Rider</string>
     <string name="call_customer">Call Customer</string>
+    <string name="select_a_location">Select a location</string>
+    <string name="use_your_current_location">Use your current location</string>
+    <string name="add_address">Add Address</string>
+    <string name="_1_4_kms">1.4 Kms</string>
+    <string name="home">Home</string>
+    <string name="_2_62a_sector_64_noida_uttar_pradesh">2/62A, Sector 64, Noida, Uttar Pradesh</string>
+    <string name="nearby_stores">Nearby Stores</string>
+    <string name="tech_mahindra">Tech Mahindra</string>
 
     <string-array name="month">
 
