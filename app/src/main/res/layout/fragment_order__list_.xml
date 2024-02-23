@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Order_List_Fragment">
+
+
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/arrow_left"/>
+
+    <TextView
+        android:id="@+id/order_list_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order List"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/back_image"
+        app:layout_constraintTop_toTopOf="@id/back_image"
+        app:layout_constraintStart_toEndOf="@id/back_image"
+        android:fontFamily="@font/inter_bold"/>
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/order_list_txt"
+        android:background="#DEDEDE"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pick_up_location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Up Location"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+            <TextView
+                android:id="@+id/address_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toStartOf="@id/location_txt"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="J-121, Second Floor, Block J, Rajouri\nGarden, New Delhi"
+                android:textSize="14sp"
+                android:textColor="#686868"
+                android:fontFamily="@font/inter"
+                app:layout_constraintTop_toBottomOf="@id/pick_up_location_txt"
+                app:layout_constraintStart_toStartOf="@id/pick_up_location_txt"/>
+
+            <TextView
+                android:id="@+id/location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/change_draw"
+                android:drawableStart="@drawable/group_34111"
+                android:drawablePadding="@dimen/_2sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:text="Map"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingVertical="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@id/address_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/address_txt" />
+
+            <ImageView
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@id/address_txt"
+                android:background="#DEDEDE"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/food_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/down_drawable"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/view2">
+
+
+                <TextView
+                    android:id="@+id/food_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/current_balance_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Category"
+                    android:textSize="16sp"
+                    android:textColor="#686868"
+                    android:fontFamily="@font/inter"
+                    app:layout_constraintStart_toStartOf="@id/food_txt"
+                    app:layout_constraintTop_toBottomOf="@id/food_txt" />
+
+                <ImageView
+                    android:id="@+id/view_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/line_224"
+                    app:layout_constraintBottom_toBottomOf="@+id/current_balance_txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/food_txt" />
+
+                <TextView
+                    android:id="@+id/month_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:text="14.5 Kg"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    app:layout_constraintStart_toEndOf="@id/view_line"
+                    app:layout_constraintTop_toTopOf="@+id/food_txt" />
+                <TextView
+                    android:id="@+id/transfer_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Weight"
+                    android:textSize="16sp"
+                    android:textColor="#686868"
+                    android:fontFamily="@font/inter"
+                    app:layout_constraintStart_toStartOf="@id/month_txt"
+                    app:layout_constraintTop_toBottomOf="@id/month_txt"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/drop_1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/drop_1_draw"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/food_layout">
+
+                <TextView
+                    android:id="@+id/drop_1_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Drop 1"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/active_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="Active"
+                    android:textSize="12sp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:background="@drawable/active_draw"
+                    android:textColor="@color/green"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/drop_1_txt"
+                    app:layout_constraintStart_toEndOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toTopOf="@+id/drop_1_txt" />
+
+                <TextView
+                    android:id="@+id/details_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Details"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toTopOf="@id/drop_1_txt"
+                    app:layout_constraintBottom_toBottomOf="@id/drop_1_txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/drop_1_txt"/>
+
+                <View
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="1dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="@+id/details_txt"
+                    app:layout_constraintStart_toStartOf="@id/details_txt"
+                    app:layout_constraintTop_toBottomOf="@id/details_txt" />
+
+                <TextView
+                    android:id="@+id/address_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="J-121, Second Floor, Block J, Rajouri\nGarden, New Delhi"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    app:layout_constraintEnd_toEndOf="@id/details_txt"
+                    app:layout_constraintTop_toBottomOf="@id/drop_1_txt"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"/>
+                <ImageView
+                    android:id="@+id/view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:layout_constraintTop_toBottomOf="@id/address_txt_1"
+                    android:background="#DEDEDE"/>
+
+                <TextView
+                    android:id="@+id/customer_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toBottomOf="@id/view_3" />
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="Abhishek Jaiswal"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_name_txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/customer_name_txt" />
+                <TextView
+                    android:id="@+id/customer_number_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Number"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toBottomOf="@id/customer_name_txt" />
+
+                <TextView
+                    android:id="@+id/number_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="+91 00000 00000"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_number_txt"
+                    app:layout_constraintStart_toStartOf="@id/name_txt"
+                    app:layout_constraintTop_toTopOf="@+id/customer_number_txt" />
+
+                <TextView
+                    android:id="@+id/item_weight_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Weight"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toBottomOf="@id/customer_number_txt" />
+
+                <TextView
+                    android:id="@+id/kg_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="4.5 Kg"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/item_weight_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_weight_txt"
+                    app:layout_constraintStart_toStartOf="@id/number_txt"
+                    />
+                <TextView
+                    android:id="@+id/order_value_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Value"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toBottomOf="@id/item_weight_txt" />
+                <TextView
+                    android:id="@+id/value_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="1250 ₹"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/order_value_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/order_value_txt"
+                    app:layout_constraintStart_toStartOf="@id/kg_txt"
+                    />
+
+                <TextView
+                    android:id="@+id/collect_payment_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collect Payment"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/low_grey_colour"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_1_txt"
+                    app:layout_constraintTop_toBottomOf="@id/order_value_txt" />
+
+                <TextView
+                    android:id="@+id/yest_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="Yes"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/collect_payment_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/collect_payment_txt"
+                    app:layout_constraintStart_toStartOf="@id/value_txt"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/drop_2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/drop_1_draw"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_1_layout">
+
+                <TextView
+                    android:id="@+id/drop_2_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Drop 2"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/pending_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="Pending"
+                    android:textSize="12sp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:background="@drawable/peding_draw"
+                    android:textColor="#EC5C27"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/drop_2_txt"
+                    app:layout_constraintStart_toEndOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toTopOf="@+id/drop_2_txt" />
+
+                <TextView
+                    android:id="@+id/details_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Details"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/light_blue"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintTop_toTopOf="@id/drop_2_txt"
+                    app:layout_constraintBottom_toBottomOf="@id/drop_2_txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/drop_2_txt"/>
+
+                <View
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="1dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="@+id/details_txt_1"
+                    app:layout_constraintStart_toStartOf="@id/details_txt_1"
+                    app:layout_constraintTop_toBottomOf="@id/details_txt_1" />
+
+                <TextView
+                    android:id="@+id/address_txt_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="J-121, Second Floor, Block J, Rajouri\nGarden, New Delhi"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    app:layout_constraintEnd_toEndOf="@id/details_txt_1"
+                    app:layout_constraintTop_toBottomOf="@id/drop_2_txt"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"/>
+                <ImageView
+                    android:id="@+id/view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:layout_constraintTop_toBottomOf="@id/address_txt_2"
+                    android:background="#DEDEDE"/>
+
+                <TextView
+                    android:id="@+id/customer_name_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toBottomOf="@id/view_4" />
+
+                <TextView
+                    android:id="@+id/name_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="Abhishek Jaiswal"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_name_txt_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/customer_name_txt_1" />
+                <TextView
+                    android:id="@+id/customer_number_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Number"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toBottomOf="@id/customer_name_txt_1" />
+
+                <TextView
+                    android:id="@+id/number_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="+91 00000 00000"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintBottom_toBottomOf="@+id/customer_number_txt_1"
+                    app:layout_constraintStart_toStartOf="@id/name_txt_1"
+                    app:layout_constraintTop_toTopOf="@+id/customer_number_txt_1" />
+
+                <TextView
+                    android:id="@+id/item_weight_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Weight"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toBottomOf="@id/customer_number_txt_1" />
+
+                <TextView
+                    android:id="@+id/kg_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="4.5 Kg"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/item_weight_txt_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_weight_txt_1"
+                    app:layout_constraintStart_toStartOf="@id/number_txt_1"
+                    />
+                <TextView
+                    android:id="@+id/order_value_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Value"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toBottomOf="@id/item_weight_txt_1" />
+                <TextView
+                    android:id="@+id/value_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="1250 ₹"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/order_value_txt_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/order_value_txt_1"
+                    app:layout_constraintStart_toStartOf="@id/kg_txt_1"
+                    />
+
+                <TextView
+                    android:id="@+id/collect_payment_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collect Payment"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_grey_colour"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="@id/drop_2_txt"
+                    app:layout_constraintTop_toBottomOf="@id/order_value_txt_1" />
+
+                <TextView
+                    android:id="@+id/yest_txt_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:fontFamily="@font/inter"
+                    android:text="Yes"
+                    android:textSize="14sp"
+                    android:textColor="@color/low_black_colour"
+                    app:layout_constraintTop_toTopOf="@id/collect_payment_txt_1"
+                    app:layout_constraintBottom_toBottomOf="@+id/collect_payment_txt_1"
+                    app:layout_constraintStart_toStartOf="@id/value_txt_1"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Track Order"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:backgroundTint="#FA713F"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/drawable_edit"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -125,6 +125,7 @@
     <string name="_2_62a_sector_64_noida_uttar_pradesh">2/62A, Sector 64, Noida, Uttar Pradesh</string>
     <string name="nearby_stores">Nearby Stores</string>
     <string name="tech_mahindra">Tech Mahindra</string>
+    <string name="_8_ft_loader">8 ft. Loader</string>
 
     <string-array name="month">
 
@@ -138,10 +139,7 @@
         <item>jan</item>
 
 
-
     </string-array>
-
-
 
 
 </resources>

@@ -32,6 +32,7 @@ class HomeFragment : Fragment() {
         val pickuplocation= view.findViewById<Button>(R.id.button_pickuplocation)
         val exact= view.findViewById<Button>(R.id.button_exact)
 
+
         location.setOnClickListener {
 
             Navigation.findNavController(view).navigate(R.id.location_Fragment)
@@ -41,18 +42,13 @@ class HomeFragment : Fragment() {
         menuadd.setOnClickListener {
 
 
-            val dialog = BottomSheetDialog(requireActivity())
-            val view = layoutInflater.inflate(R.layout.menu_add, null)
-
-            dialog.setCancelable(true)
-            dialog.setContentView(view)
-            dialog.show()
+             Navigation.findNavController(view).navigate(R.id.order_List_Fragment)
 
         }
 
         alertdialogbox.setOnClickListener {
 
-            Navigation.findNavController(view).navigate(R.id.alert_dialiogbox_Fragment)
+            Navigation.findNavController(view).navigate(R.id.drop_1_Details_Fragment)
         }
 
         multipleorder.setOnClickListener {

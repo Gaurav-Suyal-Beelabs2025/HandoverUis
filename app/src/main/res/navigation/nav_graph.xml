@@ -26,6 +26,12 @@
         <action
             android:id="@+id/action_homeFragment_to_pickup_Location_Fragment"
             app:destination="@id/pickup_Location_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drop_1_Details_Fragment"
+            app:destination="@id/drop_1_Details_Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_order_List_Fragment"
+            app:destination="@id/order_List_Fragment" />
     </fragment>
     <fragment
         android:id="@+id/location_Fragment"
@@ -52,4 +58,14 @@
         android:name="com.example.newretailer.Fragment.Pickup_Location_Fragment"
         android:label="fragment_pickup__location_"
         tools:layout="@layout/fragment_pickup__location_" />
+    <fragment
+        android:id="@+id/drop_1_Details_Fragment"
+        android:name="com.example.newretailer.Drop_1_Details_Fragment"
+        android:label="fragment_drop_1__details_"
+        tools:layout="@layout/fragment_drop_1__details_" />
+    <fragment
+        android:id="@+id/order_List_Fragment"
+        android:name="com.example.newretailer.Order_List_Fragment"
+        android:label="fragment_order__list_"
+        tools:layout="@layout/fragment_order__list_" />
 </navigation>

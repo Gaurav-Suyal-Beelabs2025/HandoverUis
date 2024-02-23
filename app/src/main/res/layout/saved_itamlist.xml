@@ -68,7 +68,6 @@
                 android:background="#EEEEEE"
                 app:layout_constraintStart_toStartOf="@id/txt_temporary_home"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="@dimen/_5sdp"

@@ -245,9 +245,8 @@
                         app:layout_constraintTop_toBottomOf="@+id/txt_saved_addresses"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         android:scrollbars="vertical"
-                        app:spanCount="3"
                         android:layout_marginHorizontal="@dimen/_12sdp"
-                        tools:itemCount="1"
+                        tools:itemCount="5"
                         tools:listitem="@layout/saved_itamlist"
                         android:orientation="vertical"
                         android:layout_marginTop="@dimen/_15sdp" />
@@ -276,6 +275,7 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginHorizontal="@dimen/_12sdp"
                         android:orientation="vertical"
+                        tools:itemCount="5"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         tools:listitem="@layout/nearby_store_itamlist"
                         app:layout_constraintTop_toBottomOf="@+id/tv_nearby_stores"/>
@@ -304,6 +304,7 @@
                         android:background="@drawable/search_view_drawable"
                         android:orientation="vertical"
                         android:scrollbars="vertical"
+                        tools:itemCount="5"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         app:layout_constraintTop_toBottomOf="@id/txt_recent_locations"
