@@ -126,6 +126,35 @@
     <string name="nearby_stores">Nearby Stores</string>
     <string name="tech_mahindra">Tech Mahindra</string>
     <string name="_8_ft_loader">8 ft. Loader</string>
+    <string name="rajeev_ranjan">Rajeev Ranjan</string>
+    <string name="pick_up_location">Pick Up Location</string>
+    <string name="j_121_second_floor_block_j_rajouri_ngarden_new_delhi">J-121, Second Floor, Block J, Rajouri\nGarden, New Delhi</string>
+    <string name="map">Map</string>
+    <string name="item_category">Item Category</string>
+    <string name="_14_5_kg">14.5 Kg</string>
+    <string name="drop_1">Drop 1</string>
+    <string name="active">Active</string>
+    <string name="details">Details</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="abhishek_jaiswal">Abhishek Jaiswal</string>
+    <string name="customer_number">Customer Number</string>
+    <string name="_91_00000_00000">+91 00000 00000</string>
+    <string name="item_weight">Item Weight</string>
+    <string name="_4_5_kg">4.5 Kg</string>
+    <string name="order_value">Order Value</string>
+    <string name="_1250">1250 ₹</string>
+    <string name="collect_payment">Collect Payment</string>
+    <string name="yes">Yes</string>
+    <string name="drop_2">Drop 2</string>
+    <string name="pending">Pending</string>
+    <string name="track_order">Track Order</string>
+    <string name="drop_1_details">Drop 1 Details</string>
+    <string name="drop_off">Drop Off</string>
+    <string name="edit">Edit</string>
+    <string name="see_on_map">See On Map</string>
+    <string name="receiver_details">Receiver Details</string>
+    <string name="eg_name_mobile_no_gst_etc">Eg. Name , Mobile no, GST etc.</string>
+    <string name="eg_size_quantity_type_etc">Eg. Size , quantity, type etc.</string>
 
     <string-array name="month">
 

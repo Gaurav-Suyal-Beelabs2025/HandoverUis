@@ -12,7 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F7F8FA"
+        android:background="@color/light_gre_100"
         tools:context=".Fragment.Location_Fragment">
 
 
@@ -81,9 +81,9 @@
                             android:fontFamily="@font/inter_regular"
                             android:hint="@string/Search_in_your_neighbourhood"
                             android:singleLine="true"
-                            android:textColor="#8B8B8B"
+                            android:textColor="@color/midium_gre_200"
                             android:layout_marginEnd="@dimen/_10sdp"
-                            android:textColorHint="#8B8B8B"
+                            android:textColorHint="@color/midium_gre_200"
                             android:textFontWeight="400"
                             android:textSize="14sp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -135,7 +135,7 @@
                     android:text="@string/use_your_current_location"
                     android:textAllCaps="false"
                     android:textSize="16sp"
-                    android:textColor="#262626"
+                    android:textColor="@color/low_black_colour"
                     android:textFontWeight="600"
                     android:fontFamily="@font/inter_semibold"
                     android:layout_marginStart="@dimen/_10sdp"
@@ -151,7 +151,7 @@
                     android:fontFamily="@font/inter_regular"
                     android:text="@string/b_154_noida_63_noida_201301"
                     android:textAllCaps="false"
-                    android:textColor="#686868"
+                    android:textColor="@color/low_grey_colour"
                     android:textFontWeight="400"
                     android:textSize="14sp"
                     android:layout_marginEnd="@dimen/_10sdp"
@@ -175,7 +175,7 @@
                        android:id="@+id/view_current_location"
                        android:layout_width="match_parent"
                        android:layout_height="1dp"
-                       android:background="#EAEBEE"
+                       android:background="@color/midium_gre_300"
                        android:layout_marginTop="@dimen/_15sdp"
                        app:layout_constraintTop_toBottomOf="@id/tv_adress"/>
 
@@ -207,7 +207,7 @@
                           android:text="@string/add_address"
                           android:textAllCaps="false"
                           android:textSize="16sp"
-                          android:textColor="#EF5B25"
+                          android:textColor="@color/deep_orange_700"
                           android:textFontWeight="600"
                           android:fontFamily="@font/inter_semibold"/>
 
@@ -259,7 +259,7 @@
                         android:text="@string/nearby_stores"
                         android:textAllCaps="false"
                         android:textSize="16sp"
-                        android:textColor="#262626"
+                        android:textColor="@color/low_black_colour"
                         android:textFontWeight="600"
                         android:fontFamily="@font/inter_semibold"
                         android:layout_marginTop="@dimen/_15sdp"
