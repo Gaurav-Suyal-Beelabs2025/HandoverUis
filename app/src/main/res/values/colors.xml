@@ -20,5 +20,6 @@
     <color name="midium_gre_200">#8B8B8B</color>
     <color name="deep_orange_700">#EF5B25</color>
     <color name="light_red_100">#EC5C27</color>
+    <color name="dark_gray">#EAEBEE</color>
 
 </resources>

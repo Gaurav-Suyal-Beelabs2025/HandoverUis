@@ -155,6 +155,9 @@
     <string name="receiver_details">Receiver Details</string>
     <string name="eg_name_mobile_no_gst_etc">Eg. Name , Mobile no, GST etc.</string>
     <string name="eg_size_quantity_type_etc">Eg. Size , quantity, type etc.</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="drop_3">Drop 3</string>
 
     <string-array name="month">
 
